@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     return (
        <>
-       <Header />
+       
        <Particles
         id="tsparticles"
         init={particlesInit}
@@ -35,7 +35,7 @@ class App extends Component {
                 mode: "push",
               },
               onHover: {
-                enable: true,
+                enable: false,
                 mode: "repulse",
               },
               resize: true,
@@ -58,10 +58,10 @@ class App extends Component {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: "#12606a",
             },
             links: {
-              color: "#ffffff",
+              color: "#12606a",
               distance: 150,
               enable: true,
               opacity: 0.5,
@@ -74,16 +74,16 @@ class App extends Component {
               direction: "none",
               enable: true,
               outMode: "bounce",
-              random: false,
-              speed: 6,
-              straight: false,
+              random: true,
+              speed: 1,
+              straight: true,
             },
             number: {
               density: {
                 enable: true,
-                area: 800,
+                area: 4000,
               },
-              value: 80,
+              value: 120,
             },
             opacity: {
               value: 0.5,
@@ -99,6 +99,7 @@ class App extends Component {
           detectRetina: true,
         }}
          />
+         <Header />
         </>
     )
   }
