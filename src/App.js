@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/header/Header';
 import Particles from "react-tsparticles";
+import HomePage from './components/features/home';
+
 
 const particlesInit = (main) => {
   console.log(main);
@@ -16,7 +18,6 @@ class App extends Component {
   render() {
     return (
        <>
-       
        <Particles
         id="tsparticles"
         init={particlesInit}
@@ -26,6 +27,10 @@ class App extends Component {
             color: {
               value: "#0d0a28",
             },
+          },
+          fullScreen: {
+            enable: true,
+            zIndex: -1
           },
           fpsLimit: 120,
           interactivity: {
@@ -100,6 +105,7 @@ class App extends Component {
         }}
          />
          <Header />
+         <HomePage />
         </>
     )
   }
