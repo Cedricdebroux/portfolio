@@ -3,6 +3,9 @@ import './App.css';
 import Header from './components/header/Header';
 import Particles from "react-tsparticles";
 import HomePage from './components/features/home';
+import ContactMe from './components/features/contact';
+import AboutMe from './components/features/aboutMe';
+import Works from './components/features/works';
 
 
 const particlesInit = (main) => {
@@ -106,6 +109,9 @@ class App extends Component {
          />
          <Header />
          <HomePage />
+         <ContactMe />
+         <AboutMe />
+         <Works />
         </>
     )
   }
