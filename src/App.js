@@ -31,7 +31,7 @@ function App () {
     return (
        <Router>
          <>
-          <Navbar bg="none" variant="dark" expand="lg">
+          <Navbar bg="none" variant="dark" expand="md">
             <Container fluid>
               <Navbar.Brand href="/">D-clic-web</Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
