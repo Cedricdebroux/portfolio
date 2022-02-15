@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
+import ReactDOM from 'react-dom'
 import './App.css';
-import Header from './components/header/Header';
 import Particles from "react-tsparticles";
 import HomePage from './components/features/home';
 import ContactMe from './components/features/contact';
 import AboutMe from './components/features/aboutMe';
 import Works from './components/features/works';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'; 
+import { BrowserRouter as Router, Route, NavLink, Redirect } from 'react-router-dom'; 
+import { CSSTransition } from 'react-transition-group';
+import { Container, Navbar, Nav } from 'react-bootstrap'
 
 
 const particlesInit = (main) => {
@@ -18,11 +20,61 @@ const particlesInit = (main) => {
 const particlesLoaded = (container) => {
   console.log(container);
 };
-class App extends Component {
-  render() {
+
+const routes = [
+  { path: '/home', name: 'Acceuil', Component: HomePage },
+  { path: '/about', name: 'A Propos de moi', Component: AboutMe },
+  { path: '/works', name: 'Réalisations', Component: Works },
+  { path: '/contact', name: 'Contactez moi', Component: ContactMe }
+]
+function App () {
     return (
        <Router>
-         <Header />
+         <>
+          <Navbar bg="none" variant="dark" expand="lg">
+            <Container fluid>
+              <Navbar.Brand href="/">D-clic-web</Navbar.Brand>
+              <Navbar.Toggle aria-controls="navbarScroll" />
+              <Navbar.Collapse id="navbarScroll">
+                <Nav
+                  className="ml-auto my-2 my-lg-0"
+                  style={{ maxHeight: '180px' }}
+                  navbarScroll
+                >
+                  {routes.map(route => (
+                        <Nav.Link
+                          key={route.path}
+                          as={NavLink}
+                          to={route.path}
+                          activeClassName="active"
+                          exact
+                        >
+                          {route.name}
+                        </Nav.Link>
+                      ))}
+                </Nav>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
+            <Container className="container">
+            {routes.map(({ path, Component }) => (
+              <Route key={path} exact path={path}>
+                {({ match }) => (
+                  <CSSTransition
+                    in={match != null}
+                    timeout={300}
+                    classNames="page"
+                    unmountOnExit
+                  >
+                    <div className="page">
+                      <Component />
+                    </div>
+                  </CSSTransition>
+                )}
+              </Route>
+            ))}
+            <Redirect to="/home" />
+          </Container>
           <Particles
           id="tsparticles"
           init={particlesInit}
@@ -45,8 +97,8 @@ class App extends Component {
                   mode: "push",
                 },
                 onHover: {
-                  enable: false,
-                  mode: "repulse",
+                  enable: true,
+                  mode: "attract",
                 },
                 resize: true,
               },
@@ -109,16 +161,12 @@ class App extends Component {
             detectRetina: true,
           }}
           />
-         <Switch>
-            <Route path="/home" component={HomePage} />
-            <Route path="/contact" component={ContactMe} />
-            <Route path="/about" component={AboutMe} />
-            <Route path="/works" component={Works} />
-            <Redirect from="/" to="/home" />
-          </Switch>
-        </Router>
-    )
-  }
+      </>
+    </Router>
+  )
 }
 
+
+const rootElement = document.getElementById('root')
+ReactDOM.render(<App />, rootElement)
 export default App;
