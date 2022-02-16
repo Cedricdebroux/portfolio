@@ -27,6 +27,8 @@ const routes = [
   { path: '/works', name: 'Réalisations', Component: Works },
   { path: '/contact', name: 'Contactez moi', Component: ContactMe }
 ]
+
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -177,7 +179,8 @@ class App extends Component {
           }}
           />
           </>
-          ) :(<Loading />) }
+          ) :(
+          <Loading />) }
           </Router>
           )
         }
