@@ -39,7 +39,7 @@ class App extends Component {
       this.setState({
         loaded: true
       })
-    }, 2000);
+    }, 3000);
   }
  render() {
   return (
