@@ -12,7 +12,9 @@ const ContactMe = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+if (name.length === 0 || phone.length === 0 || email.length === 0 || message.length === 0) {
+  alert("Veuillez remplir tous les champs");
+} else {
     emailjs.sendForm('service_a0tesa5', 'template_3xerq0d', form.current, 'user_F9oLBdeip2nX42IiAdsYr')
       .then((result) => {
         console.log('success !');
@@ -25,18 +27,18 @@ const ContactMe = () => {
         document.querySelector('.form-message').innerHTML =
         "Une erreur s'est produite, veuillez réessayer."
       });
-  };
+  };}
 
   return (
     <form ref={form} onSubmit={sendEmail} className="contact-form">
-            <h2>Contactez-nous</h2>
+            <h2>Contactez-moi</h2>
       <div className="form-content">
         <input
           type="text"
           id="name"
           name="name"
           onChange={(e) => setName(e.target.value)}
-          placeholder="nom *"
+          placeholder="Nom *"
           value={name}
           autoComplete="off"
         />
@@ -45,7 +47,7 @@ const ContactMe = () => {
           id="company"
           name="company"
           onChange={(e) => setCompany(e.target.value)}
-          placeholder="société"
+          placeholder="Société"
           value={company}
         />
         <input
@@ -62,7 +64,7 @@ const ContactMe = () => {
             id="email"
             name="email"
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="email *"
+            placeholder="Email *"
             value={email}
             autoComplete="on"
           />
@@ -71,7 +73,7 @@ const ContactMe = () => {
           id="message"
           name="message"
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="message *"
+          placeholder="Votre message *"
           value={message}
         />
       </div>
