@@ -13,18 +13,20 @@ const ContactMe = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 if (name.length === 0 || phone.length === 0 || email.length === 0 || message.length === 0) {
-  alert("Veuillez remplir tous les champs");
+  document.querySelector('.send-invalid-input').innerHTML = "Merci de remplir tous les champs.";
 } else {
     emailjs.sendForm('service_a0tesa5', 'template_3xerq0d', form.current, 'user_F9oLBdeip2nX42IiAdsYr')
       .then((result) => {
-        console.log('success !');
         setName("");
         setCompany("");
         setPhone("");
         setEmail("");
         setMessage("");
+        document.querySelector('.send-invalid-input').innerHTML = "";
+        document.querySelector('.send-valid').innerHTML = "Votre message a bien été envoyé, je vous répondrai dans les plus brefs délais.";
       }, (error) => {
-        document.querySelector('.form-message').innerHTML =
+        document.querySelector('.send-invalid-input').innerHTML = "";
+        document.querySelector('.send-invalid').innerHTML =
         "Une erreur s'est produite, veuillez réessayer."
       });
   };}
@@ -91,6 +93,16 @@ if (name.length === 0 || phone.length === 0 || email.length === 0 || message.len
           </div>
         <input type="submit" value="Envoyer" className={ styles.formButton } />
       </form>
+      <div className={ styles.sendValid}>
+        <p className="send-valid"></p>
+      </div>
+      <div className={ styles.sendInvalid}>
+        <p className="send-invalid"></p>
+      </div>
+      <div className={ styles.sendInvalidInput}>
+        <p className="send-invalid-input"></p>
+      </div>
+
     </div>
   );
 };
