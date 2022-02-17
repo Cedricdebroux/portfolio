@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import './ContactMe.module.css';
+import styles from'./ContactMe.module.css';
 
 const ContactMe = () => {
   const form = useRef();
@@ -30,55 +30,68 @@ if (name.length === 0 || phone.length === 0 || email.length === 0 || message.len
   };}
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="contact-form">
-            <h2>Contactez-moi</h2>
-      <div className="form-content">
-        <input
-          type="text"
-          id="name"
-          name="name"
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Nom *"
-          value={name}
-          autoComplete="off"
-        />
-        <input
-          type="text"
-          id="company"
-          name="company"
-          onChange={(e) => setCompany(e.target.value)}
-          placeholder="Société"
-          value={company}
-        />
-        <input
-          type="text"
-          id="phone"
-          name="phone"
-          onChange={(e) => setPhone(e.target.value)}
-          placeholder="Téléphone"
-          value={phone}
-        />
-        <div className="email-content">
+    <div className={styles.formCustom }>
+      <form ref={form} onSubmit={sendEmail} className="contact-form ">
+              <h2 className={ styles.formH2 }>Contactez-moi</h2>
+          <div className="mb-3">
           <input
-            type="mail"
-            id="email"
-            name="email"
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Email *"
-            value={email}
-            autoComplete="on"
+            className='form-control border-bottom-1 border-left-0 border-right-0 border-top-0'
+            type="text"
+            id="name"
+            name="name"
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Nom *"
+            value={name}
+            autoComplete="off"
           />
-        </div>
-        <textarea
-          id="message"
-          name="message"
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder="Votre message *"
-          value={message}
-        />
-      </div>
-      <input type="submit" value="Envoyer" />
-    </form>
+          </div>
+          <div className="mb-3">
+          <input
+            className='form-control border-bottom-1 border-left-0 border-right-0 border-top-0'
+            type="text"
+            id="company"
+            name="company"
+            onChange={(e) => setCompany(e.target.value)}
+            placeholder="Société"
+            value={company}
+          />
+          </div>
+          <div className="mb-3">
+          <input
+            className='form-control border-bottom-1 border-left-0 border-right-0 border-top-0'
+            type="text"
+            id="phone"
+            name="phone"
+            onChange={(e) => setPhone(e.target.value)}
+            placeholder="Téléphone"
+            value={phone}
+          />
+          </div>
+          <div className="mb-3">
+            <input
+              className='form-control border-bottom-1 border-left-0 border-right-0 border-top-0'
+              type="mail"
+              id="email"
+              name="email"
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Email *"
+              value={email}
+              autoComplete="on"
+            />
+          </div>
+          <div className="mb-3">
+          <textarea
+            className='form-control border-bottom-1 border-left-0 border-right-0 border-top-0'
+            id="message"
+            name="message"
+            onChange={(e) => setMessage(e.target.value)}
+            placeholder="Votre message *"
+            value={message}
+          />
+          </div>
+        <input type="submit" value="Envoyer" className={ styles.formButton } />
+      </form>
+    </div>
   );
 };
 export default ContactMe;
