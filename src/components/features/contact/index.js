@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from'./ContactMe.module.css';
+import mail from './email.png';
 
 const ContactMe = () => {
   const form = useRef();
@@ -31,12 +32,15 @@ if (name.length === 0 || phone.length === 0 || email.length === 0 || message.len
         document.querySelector('.send-invalid').innerHTML =
         "Une erreur s'est produite, veuillez réessayer."
       });
-  };}
-
-  return (
-    <div className={styles.formCustom }>
+    };}
+    
+    return (
+      <div className={styles.formCustom }>
       <form ref={form} onSubmit={sendEmail} className="contact-form ">
-              <h2 className={ styles.formH2 }>Contactez-moi</h2>
+        <div className={ styles.emailBox }>
+            <h2 className={ styles.formH2 }>Contactez-moi</h2>
+            <img src={mail} alt='email' className={styles.emailIcon} />
+        </div>
           <div className="mb-3">
           <input
             className='form-control border-bottom-1 border-left-0 border-right-0 border-top-0'

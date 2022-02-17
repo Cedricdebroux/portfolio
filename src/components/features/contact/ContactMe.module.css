@@ -7,6 +7,9 @@
 }
 .formButton {
   background-color: #0d0a28;
+  border-color: #0d0a28;
+  width: 13rem;
+  font-size: 1.1rem;
   color: white;
   border-radius: 10px;
   padding: 10px;
@@ -33,4 +36,13 @@
 .sendInvalidInput {
   color: #ff0000;
   font-weight: bold;
+}
+.emailIcon {
+  width: 3rem;
+  margin-bottom: 10px;
+}
+.emailBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
