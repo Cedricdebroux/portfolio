@@ -44,7 +44,28 @@
         font-size: 1.5rem;
     }
 }
-    
+
+.logow {
+    width: 8%;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    animation: logo-w infinite 16s linear;
+}
+.logoSass {
+    width: 8%;
+    position: absolute;
+    top: 45%;
+    left: 80%;
+    animation: logo-sass infinite 12s linear;
+}
+.logoBootstrap {
+    width: 8%;
+    position: absolute;
+    top: 110%;
+    left: 45%;
+    animation: logo-bootstrap infinite 14s linear;
+}
 .logoReact {
     width: 8%;
     animation: logo-fade-in-out-react infinite 10s linear;
@@ -52,18 +73,17 @@
 }
 .logoVue {
     width: 8%;
-    display: flex;
+
     position: absolute;
-    left: 50vw;
-    top: 10vh;
+    left: 60%;
+    top: 10%;
     animation: logo-scale-vue infinite 23s linear;
 }
 .logoSf {
     width: 8%;
-    display: flex;
     position: absolute;
     left: 90%;
-    top: 75vh;
+    top: 98%;
     animation: logo-sf infinite 18s linear;
 
 }
@@ -110,9 +130,66 @@
         opacity: 0;
       }
       50% {
+        opacity: 0;
+      }
+      60% {
+        opacity: 1;
+      }
+      75% {
         opacity: 1;
       }
       100% {
         opacity: 0;
+      }
+}
+@keyframes logo-w {
+    0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      60% {
+        opacity: 0;
+      }
+      75% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+}
+@keyframes logo-sass {
+    0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      60% {
+        opacity: 0;
+      }
+      75% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+}
+@keyframes logo-bootstrap {
+    0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      60% {
+        opacity: 0;
+      }
+      75% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
       }
 }
