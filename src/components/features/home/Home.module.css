@@ -1,5 +1,118 @@
+.box {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40vh;
+    transform: translateY(-50%);
+}
 .title {
-    color: white;
-    font-size: 1.5em;
+    font-size: 2.8rem;
     text-align: center;
+    font-family: play;
+    color:#dfdede;
+}
+.subtitle {
+    color: #a5a5a5;
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 0.5
+}
+.subtitle2 {
+    color: #a5a5a5;
+    font-size: 2.5rem;
+    text-align: center;
+}
+@media screen and (max-width: 430px) {
+    .title {
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 1.8rem;
+    }
+    .subtitle2 {
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 390px) {
+    .title {
+        font-size: 1.8rem;
+    }
+    .subtitle {
+        font-size: 1.5rem;
+    }
+    .subtitle2 {
+        font-size: 1.5rem;
+    }
+}
+    
+.logoReact {
+    width: 8%;
+    animation: logo-fade-in-out-react infinite 10s linear;
+   
+}
+.logoVue {
+    width: 8%;
+    display: flex;
+    position: absolute;
+    left: 50vw;
+    top: 10vh;
+    animation: logo-scale-vue infinite 23s linear;
+}
+.logoSf {
+    width: 8%;
+    display: flex;
+    position: absolute;
+    left: 90%;
+    top: 75vh;
+    animation: logo-sf infinite 18s linear;
+
+}
+@keyframes logo-fade-in-out-react {
+    0% {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+@keyframes logo-scale-vue {
+    0% {
+        transform: scale(0.5);
+      }
+    50% {
+        transform: scale(1);
+      }
+    0% {
+        transform: scale(0.5);
+    }
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+@keyframes logo-sf {
+    0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
 }

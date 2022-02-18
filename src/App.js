@@ -22,10 +22,10 @@ const particlesLoaded = (container) => {
 };
 
 const routes = [
-  { path: '/home', name: 'Acceuil', Component: HomePage },
-  { path: '/about', name: 'A Propos de moi', Component: AboutMe },
+  { path: '/home', name: 'Accueil', Component: HomePage },
+  { path: '/about', name: 'À propos de moi', Component: AboutMe },
   { path: '/works', name: 'Réalisations', Component: Works },
-  { path: '/contact', name: 'Contactez moi', Component: ContactMe }
+  { path: '/contact', name: 'Contactez-moi', Component: ContactMe }
 ]
 
 
@@ -50,7 +50,7 @@ class App extends Component {
         <>
         <Navbar bg="none" variant="dark" expand="md" className='mb-5'>
         <Container fluid>
-        <Navbar.Brand href="/">D-clic-web</Navbar.Brand>
+        <Navbar.Brand className='logo-accueil' href="/">D-clic-web</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
         <Nav
