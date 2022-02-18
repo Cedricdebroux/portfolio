@@ -29,3 +29,14 @@
   transform: scale(0.9);
   transition: opacity 300ms, transform 300ms;
 }
+.form-control {
+  background-color: #dfdede;
+  outline: 5px solid #dfdede !important;
+}
+.form-control:focus {
+  background-color: #dfdede;
+  outline: 5px solid #dfdede !important;
+  border: 0px solid #dfdede !important;
+}
+
+
