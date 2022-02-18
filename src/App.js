@@ -6,6 +6,7 @@ import ContactMe from './components/features/contact';
 import AboutMe from './components/features/aboutMe';
 import Works from './components/features/works';
 import Loading from './components/utils/Loading';
+import Footer from './components/features/footer/footer';
 import { BrowserRouter as Router, Route, NavLink, Redirect } from 'react-router-dom'; 
 import { CSSTransition } from 'react-transition-group';
 import { Container, Navbar, Nav } from 'react-bootstrap'
@@ -178,6 +179,7 @@ class App extends Component {
             detectRetina: true,
           }}
           />
+          <Footer />
           </>
           ) :(
           <Loading />) }
