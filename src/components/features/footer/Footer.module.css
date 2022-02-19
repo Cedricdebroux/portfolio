@@ -2,18 +2,25 @@
     display: flex;
     justify-content: space-between;
     align-items: bottom;
-    color: white;
     margin: 0px 35px 20px 35px;
     
 }
+.footerCustom p {
+    color: #a5a5a5;
+}
+
 .footerColor {
     color: white;
 }
+
 @media screen and (max-width: 430px) {
     .footerCustom {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin: 0px 0px 20px 0px;
+    }
+    .footerLogo img {
+       width: 20px;
     }
 }
