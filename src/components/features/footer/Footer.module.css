@@ -12,7 +12,10 @@
 .footerColor {
     color: white;
 }
-
+.footerLogo img {
+    width: 25px;
+    height: auto;
+}
 @media screen and (max-width: 430px) {
     .footerCustom {
         flex-direction: column;
