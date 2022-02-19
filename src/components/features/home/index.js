@@ -22,6 +22,10 @@ export default class HomePage extends Component {
                 <img src={logoW} alt='logo react' className={styles.logow} />
                 <img src={logoSass} alt='logo react' className={styles.logoSass} />
                 <img src={logoBootstrap} alt='logo react' className={styles.logoBootstrap} />
+                <div className={ styles.box2 }>
+                    <p className={ styles.box2Title }>Vous voulez en savoir plus ?</p>
+                    <p className={ styles.box2Subtittle }>Contactez-moi !</p>
+                </div>
                 
             </>
         )

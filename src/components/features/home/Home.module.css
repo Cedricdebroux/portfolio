@@ -48,21 +48,21 @@
 .logow {
     width: 8%;
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: 20%;
     animation: logo-w infinite 16s linear;
 }
 .logoSass {
     width: 8%;
     position: absolute;
-    top: 45%;
+    top: 18%;
     left: 80%;
     animation: logo-sass infinite 12s linear;
 }
 .logoBootstrap {
     width: 8%;
     position: absolute;
-    top: 110%;
+    top: 45%;
     left: 53%;
     animation: logo-bootstrap infinite 14s linear;
 }
@@ -73,19 +73,36 @@
 }
 .logoVue {
     width: 8%;
-
     position: absolute;
     left: 60%;
-    top: 10%;
+    top: 5%;
     animation: logo-scale-vue infinite 23s linear;
 }
 .logoSf {
     width: 8%;
     position: absolute;
     left: 90%;
-    top: 98%;
+    top: 40%;
     animation: logo-sf infinite 18s linear;
 
+}
+.box2 {
+  background-color: #dfdede;
+  padding: 30px 30px 15px 30px;
+  border-radius: 20px;
+  margin-top: 60vh;
+  transform: translateY(-50%);
+}
+.box2Title{
+    font-size: 2.2rem;
+    text-align: left;
+    font-family: play;
+    color:#0d0a28;
+}
+.box2Subtittle {
+  color: #0d0a28;
+  font-size: 2rem;
+  text-align: left;
 }
 @keyframes logo-fade-in-out-react {
     0% {

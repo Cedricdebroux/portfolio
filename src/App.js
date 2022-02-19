@@ -49,7 +49,9 @@ class App extends Component {
       <Router>
       { this.state.loaded ? (
         <>
-        <Navbar bg="none" variant="dark" expand="md" className='mb-5'>
+        <div className="mb-5">
+
+        <Navbar fixed="top" bg="none" variant="dark" expand="md" className='mb-5'>
         <Container fluid>
         <Navbar.Brand className='logo-accueil' href="/">D-clic-web</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -73,7 +75,8 @@ class App extends Component {
             </Nav>
             </Navbar.Collapse>
             </Container>
-            </Navbar>
+        </Navbar>
+        </div>
             <Container className="container">
             {routes.map(({ path, Component }) => (
               <Route key={path} exact path={path}>
