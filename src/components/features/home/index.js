@@ -6,8 +6,16 @@ import logoSf from '../../images/logoSfG.png';
 import logoW from '../../images/logoWordpress.png';
 import logoSass from '../../images/logoSass.png';
 import logoBootstrap from '../../images/logoBootstrap.png';
+import ContactMe from "../../features/contact";
+import { BrowserRouter as Router, Route, NavLink, Redirect } from 'react-router-dom'; 
+import { CSSTransition } from 'react-transition-group';
+import { Nav } from 'react-bootstrap'
 
-export default class HomePage extends Component {
+const routes = [
+    { path: '/contact', name: 'Contactez-moi', Component: ContactMe }
+  ]
+
+class HomePage extends Component {
     render() {
         return (
             <>
@@ -25,9 +33,24 @@ export default class HomePage extends Component {
                 <div className={ styles.box2 }>
                     <p className={ styles.box2Title }>Vous voulez en savoir plus ?</p>
                     <p className={ styles.box2Subtittle }>Contactez-moi !</p>
+                    <button>
+                        {routes.map(route => (
+                        <Nav.Link
+                        key={route.path}
+                        as={NavLink}
+                        to={route.path}
+                        activeClassName="active"
+                        exact
+                        >
+                                {route.name}
+                        </Nav.Link>
+                            ))} 
+                    </button>
+                    
                 </div>
                 
             </>
         )
     }
 }
+export default HomePage;

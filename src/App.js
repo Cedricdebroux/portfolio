@@ -10,6 +10,7 @@ import Footer from './components/features/footer/footer';
 import { BrowserRouter as Router, Route, NavLink, Redirect } from 'react-router-dom'; 
 import { CSSTransition } from 'react-transition-group';
 import { Container, Navbar, Nav } from 'react-bootstrap'
+import ScrollToTop from './components/scrollToTop/ScrollToTop';
 
 
 const particlesInit = (main) => {
@@ -47,6 +48,7 @@ class App extends Component {
  render() {
   return (
       <Router>
+        <ScrollToTop>
       { this.state.loaded ? (
         <>
         <div className="mb-5">
@@ -70,7 +72,7 @@ class App extends Component {
           exact
           >
                 {route.name}
-              </Nav.Link>
+          </Nav.Link>
             ))}
             </Nav>
             </Navbar.Collapse>
@@ -186,6 +188,7 @@ class App extends Component {
           </>
           ) :(
           <Loading />) }
+          </ScrollToTop>
           </Router>
           )
         }
