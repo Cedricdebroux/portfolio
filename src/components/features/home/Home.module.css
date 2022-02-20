@@ -5,6 +5,12 @@
     margin-top: 40vh;
     transform: translateY(-50%);
 }
+.box2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 .title {
     font-size: 2.8rem;
     text-align: center;
@@ -22,95 +28,123 @@
     font-size: 2.5rem;
     text-align: center;
 }
-@media screen and (max-width: 430px) {
-    .title {
-        font-size: 2rem;
-    }
-    .subtitle {
-        font-size: 1.8rem;
-    }
-    .subtitle2 {
-        font-size: 1.8rem;
-    }
+.formButton {
+  background-color: #0d0a28;
+  border-color: #0d0a28;
+  width: 13rem;
+  font-size: 1.1rem;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0
 }
-@media screen and (max-width: 390px) {
-    .title {
-        font-size: 1.8rem;
-    }
-    .subtitle {
-        font-size: 1.5rem;
-    }
-    .subtitle2 {
-        font-size: 1.5rem;
-    }
+.formButton:hover {
+  background-color: #12606a;
+  border-color: #12606a;
+}
+.navLink {
+  color:#dfdede;
+  text-decoration: none;
+}
+.navLink:hover {
+    color:#dfdede;
+  text-decoration: none;
 }
 
 .logow {
-    width: 8%;
+  width: 8%;
     position: absolute;
     top: 10%;
     left: 20%;
     animation: logo-w infinite 16s linear;
-}
-.logoSass {
+  }
+  .logoSass {
     width: 8%;
     position: absolute;
     top: 18%;
     left: 80%;
     animation: logo-sass infinite 12s linear;
-}
-.logoBootstrap {
+  }
+  .logoBootstrap {
     width: 8%;
     position: absolute;
     top: 45%;
     left: 53%;
     animation: logo-bootstrap infinite 14s linear;
-}
-.logoReact {
+  }
+  .logoReact {
     width: 8%;
     animation: logo-fade-in-out-react infinite 10s linear;
-   
-}
-.logoVue {
+    
+  }
+  .logoVue {
     width: 8%;
     position: absolute;
     left: 60%;
     top: 5%;
     animation: logo-scale-vue infinite 23s linear;
-}
-.logoSf {
+  }
+  .logoSf {
     width: 8%;
     position: absolute;
     left: 90%;
     top: 40%;
     animation: logo-sf infinite 18s linear;
-
-}
+    
+  }
 .box2 {
   background-color: #dfdede;
-  padding: 30px 30px 15px 30px;
+  padding: 20px 20px 20px 20px;
   border-radius: 20px;
-  margin-top: 60vh;
+  margin-top: 35vh;
+  margin-bottom: 5vh;
   transform: translateY(-50%);
 }
 .box2Title{
-    font-size: 2.2rem;
-    text-align: left;
-    font-family: play;
-    color:#0d0a28;
+  font-size: 2.2rem;
+  font-family: play;
+  color:#0d0a28;
+  margin-bottom:0;
+  margin-top: 0;
 }
-.box2Subtittle {
-  color: #0d0a28;
-  font-size: 2rem;
-  text-align: left;
+
+.box1 {
+  margin-top: 25vh;
 }
+
+/* Big Phone */
+
+
+@media screen and (max-width: 430px) {
+    .title {
+        font-size: 1.8rem;
+    }
+    .subtitle {
+        font-size: 1.5rem;
+    }
+    .box2Title {
+      font-size: 1.5rem;
+    }
+    .formButton {
+      width: 19rem;
+      padding: 0px;
+    }
+    .box2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10vh;
+    }
+}
+
+/* Animations */
+
 @keyframes logo-fade-in-out-react {
     0% {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
     0% {
       opacity: 0;
     }
