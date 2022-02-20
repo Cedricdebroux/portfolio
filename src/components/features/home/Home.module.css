@@ -111,6 +111,9 @@
 .box1 {
   margin-top: 25vh;
 }
+.box1 p {
+  color: white;
+}
 
 /* Big Phone */
 

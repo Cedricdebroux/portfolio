@@ -37,15 +37,15 @@ class HomePage extends Component {
                     <p className={ styles.box1Texte1 }>Animé d'une curiosité intellectuelle, j'aime me tenir informé des dernières nouveautés.</p>
                     <p className={ styles.box1Texte2 }>Voici un apercu des technologies que j'utilise</p>
                     <div className={ styles.box1Logo }>
-                        ici les logo des différentes technologies avec leur description, leur utilisation et leur liens
+                        <p>ici les logo des différentes technologies avec leur description, leur utilisation et leur liens</p>
                     </div>
                     <p className={ styles.box1Texte3 }>Pour l'instant, j'apprend</p>
                     <div className={ styles.box1Logo2 }>
-                        ici les logo des différentes technologies avec leur description, leur utilisation et leur liens
+                        <p>ici les logo des différentes technologies avec leur description, leur utilisation et leur liens</p>
                     </div>
                     <p className={ styles.box1Texte4 }>Celles qui succite ma curiosité</p>
                     <div className={ styles.box1Logo3 }>
-                        ici les logo des différentes technologies avec leur description, leur utilisation et leur liens
+                        <p>ici les logo des différentes technologies avec leur description, leur utilisation et leur liens</p>
                     </div>
                 </div>
 
