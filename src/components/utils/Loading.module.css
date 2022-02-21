@@ -1,5 +1,12 @@
 .loading {
     background-color: #0d0a28;
 }
+@media screen and (orientation: landscape) {
+    .loading img {
+        width: 375px !important;
+        margin-top: -95px !important;
+    }
+}
+    
 
 
