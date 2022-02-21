@@ -270,6 +270,29 @@
     font-size: 1.5rem;
     text-decoration: none;
   }
+  .box1 {
+    text-align: center
+  }
+  .box1Ul {
+    justify-content: center;
+  }
+  .box1Ul li {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  .box1Learn {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .box1Learn li {
+    justify-content: center;
+  }
+  .box1LearnUl {
+    justify-content: center;
+  }
+  .box1LearnUl li {
+    margin-bottom: 60px;
+  }
 }
 
 /* Animations */
