@@ -97,12 +97,15 @@ class HomePage extends Component {
                         <ul className={ styles.box1LearnUl}>
                             <li>
                                 <img src={logoJavaC} alt='logo java' className={styles.logoReactC} />
+                                <p>Java</p>
                             </li>
                             <li>    
                                 <img src={logoDart} alt='logo dart' className={styles.logoReactC} />
+                                <p>Dart</p>
                             </li>
                             <li>
                                 <img src={logoFlutterC} alt='logo node js' className={styles.logoReactC} />
+                                <p>Flutter</p>
                             </li>
                         </ul>
                     </div>

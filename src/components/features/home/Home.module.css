@@ -187,11 +187,28 @@
   font-size: 1.4rem;
   color: #dfdede;
 }
+.box1Learn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .box1LearnUl {
   width: 46vw;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+}
+.box1LearnUl li {
+  width: 180px;
+  margin-bottom: 120px;
+  display: flex;
+  align-items: center;
+}
+.box1LearnUl p {
+  margin-bottom: 0;
+  margin-left: 15px;
 }
 
 /* Big Phone */
