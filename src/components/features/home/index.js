@@ -53,6 +53,9 @@ class HomePage extends Component {
                         <h2 className={ styles.box1Title1 }>Compétences</h2>
                         <p className={ styles.box1Texte1 }>Animé d'une curiosité intellectuelle, j'aime me tenir informé des dernières nouveautés.</p>
                         <p className={ styles.box1Texte2 }>Voici un aperçu des technologies que j'utilise actuellement.</p>
+                        <button className={ styles.buttonAboutMe}>
+                        <Nav.Link as={NavLink} className={ styles.navLinkMe } to="/contact">Réalisations</Nav.Link>
+                        </button>
                     </div>
                     <div className={ styles.box1Logo }>
                         <ul className={ styles.box1Ul}>
