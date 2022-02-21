@@ -42,4 +42,6 @@
 .logo-accueil {
 box-shadow:5px 5px 5px 2px #0d0a28, 5px 5px 5px 2px #12606a, 5px 5px 5px 2px #0d0a28 ;
 }
-
+.navBarBg {
+  background-color: #0d0a28;
+}

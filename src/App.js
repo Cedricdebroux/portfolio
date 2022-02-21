@@ -6,7 +6,6 @@ import ContactMe from './components/features/contact';
 import AboutMe from './components/features/aboutMe';
 import Works from './components/features/works';
 import Loading from './components/utils/Loading';
-import Footer from './components/features/footer/footer';
 import { BrowserRouter as Router, Route, NavLink, Redirect } from 'react-router-dom'; 
 import { CSSTransition } from 'react-transition-group';
 import { Container, Navbar, Nav } from 'react-bootstrap'
@@ -53,7 +52,7 @@ class App extends Component {
         <>
         <div className="mb-5">
 
-        <Navbar fixed="top" bg="none" variant="dark" expand="md" className='mb-5'>
+        <Navbar fixed="top" variant="dark" expand="md" className='navBarBg'>
         <Container fluid>
         <Navbar.Brand className='logo-accueil' href="/">D-clic-web</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -184,7 +183,6 @@ class App extends Component {
             detectRetina: true,
           }}
           />
-          <Footer />
           </>
           ) :(
           <Loading />) }

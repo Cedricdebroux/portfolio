@@ -1,9 +1,12 @@
+.welcomBox {
+  margin-bottom: 40vh;
+}
 .box {
-    display: block;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40vh;
-    transform: translateY(-50%);
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40vh;
+  transform: translateY(-50%);
 }
 .box2 {
   display: flex;
@@ -12,86 +15,121 @@
   align-items: center;
 }
 .title {
-    font-size: 2.8rem;
-    text-align: center;
-    font-family: play;
-    color:#dfdede;
+  font-size: 2.8rem;
+  text-align: center;
+  font-family: play;
+  color: #dfdede;
 }
 .subtitle {
-    color: #a5a5a5;
-    font-size: 2.5rem;
-    text-align: center;
-    line-height: 0.5
+  color: #a5a5a5;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 0.5;
 }
 .subtitle2 {
-    color: #a5a5a5;
-    font-size: 2.5rem;
-    text-align: center;
+  color: #a5a5a5;
+  font-size: 2.5rem;
+  text-align: center;
 }
 .formButton {
   background-color: #0d0a28;
   border-color: #0d0a28;
   width: 13rem;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: white;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 0
+  box-shadow: 0;
 }
 .formButton:hover {
   background-color: #12606a;
   border-color: #12606a;
 }
+.buttonAboutMe {
+  background-color: #dfdede;
+  border-color: #dfdede;
+  width: 14rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0;
+}
+.boxAboutMe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.navLinkMe {
+  color: #0d0a28;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+.navLinkMe:hover {
+  color: #0d0a28;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
 .navLink {
-  color:#dfdede;
+  color: #dfdede;
   text-decoration: none;
 }
 .navLink:hover {
-    color:#dfdede;
+  color: #dfdede;
   text-decoration: none;
 }
-
+.titleAboutMe {
+  font-size: 1.4rem;
+  color: #dfdede;
+  font-family: Play;
+}
+.boxAboutMe p {
+  margin-bottom: 0px;
+}
 .logow {
   width: 8%;
-    position: absolute;
-    top: 10%;
-    left: 20%;
-    animation: logo-w infinite 16s linear;
-  }
-  .logoSass {
-    width: 8%;
-    position: absolute;
-    top: 18%;
-    left: 80%;
-    animation: logo-sass infinite 12s linear;
-  }
-  .logoBootstrap {
-    width: 8%;
-    position: absolute;
-    top: 45%;
-    left: 53%;
-    animation: logo-bootstrap infinite 14s linear;
-  }
-  .logoReact {
-    width: 8%;
-    animation: logo-fade-in-out-react infinite 10s linear;
-    
-  }
-  .logoVue {
-    width: 8%;
-    position: absolute;
-    left: 60%;
-    top: 5%;
-    animation: logo-scale-vue infinite 23s linear;
-  }
-  .logoSf {
-    width: 8%;
-    position: absolute;
-    left: 90%;
-    top: 40%;
-    animation: logo-sf infinite 18s linear;
-    
-  }
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  animation: logo-w infinite 16s linear;
+}
+.logoSass {
+  width: 8%;
+  position: absolute;
+  top: 18%;
+  left: 90%;
+  animation: logo-sass infinite 12s linear;
+}
+.logoBootstrap {
+  width: 8%;
+  position: absolute;
+  top: 30%;
+  left: 53%;
+  animation: logo-bootstrap infinite 14s linear;
+}
+.logoReact {
+  width: 8%;
+  animation: logo-fade-in-out-react infinite 10s linear;
+}
+.logoVue {
+  width: 8%;
+  position: absolute;
+  left: 60%;
+  top: 5%;
+  animation: logo-scale-vue infinite 23s linear;
+}
+.logoSf {
+  width: 8%;
+  position: absolute;
+  left: 90%;
+  top: 25%;
+  animation: logo-sf infinite 18s linear;
+}
+.box1Title1 {
+  font-size: 2.8rem;
+  font-family: Play;
+}
 .box2 {
   background-color: #dfdede;
   padding: 20px 20px 20px 20px;
@@ -100,11 +138,11 @@
   margin-bottom: 5vh;
   transform: translateY(-50%);
 }
-.box2Title{
+.box2Title {
   font-size: 2rem;
   font-family: play;
-  color:#0d0a28;
-  margin-bottom:0;
+  color: #0d0a28;
+  margin-bottom: 0;
   margin-top: 0;
 }
 
@@ -117,136 +155,162 @@
 
 /* Big Phone */
 
-
 @media screen and (max-width: 430px) {
-    .title {
-        font-size: 1.8rem;
-    }
-    .subtitle {
-        font-size: 1.5rem;
-    }
-    .subtitle2 {
-        font-size: 1.5rem;
-    }
-    .box2Title {
-      font-size: 1.5rem;
-    }
-    .formButton {
-      width: 19rem;
-      padding: 0px;
-    }
-    .box2 {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10vh;
-    }
+  .title {
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  .subtitle2 {
+    font-size: 1.5rem;
+  }
+  .box2Title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .formButton {
+    width: 19rem;
+    padding: 0px;
+  }
+  .box2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+  }
+  .titleAboutMe {
+    font-size: 1.4rem;
+    color: #dfdede;
+    font-family: Play;
+  }
+  .boxAboutMe {
+    display: flex;
+    justify-content: center;
+    text-align: center
+  }
+  .boxAboutMe  p{
+    margin-bottom: 10px;
+  }
+  .buttonAboutMe {
+    background-color: #dfdede;
+    border-color: #dfdede;
+    width: 19rem;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0;
+  }
+  .navLinkMe {
+    color: #0d0a28;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
 }
 
 /* Animations */
 
 @keyframes logo-fade-in-out-react {
-    0% {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+  0% {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes logo-scale-vue {
-    0% {
-        transform: scale(0.5);
-      }
-    50% {
-        transform: scale(1);
-      }
-    0% {
-        transform: scale(0.5);
-    }
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+  0% {
+    transform: scale(0.5);
   }
+  50% {
+    transform: scale(1);
+  }
+  0% {
+    transform: scale(0.5);
+  }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 @keyframes logo-sf {
-    0% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 0;
-      }
-      60% {
-        opacity: 1;
-      }
-      75% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 @keyframes logo-w {
-    0% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0;
-      }
-      60% {
-        opacity: 0;
-      }
-      75% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes logo-sass {
-    0% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0;
-      }
-      60% {
-        opacity: 0;
-      }
-      75% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes logo-bootstrap {
-    0% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0;
-      }
-      60% {
-        opacity: 0;
-      }
-      75% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

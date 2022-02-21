@@ -8,7 +8,7 @@ class Footer extends Component {
     render() {
         return (
             <>
-                <div className="fixed-bottom">
+                <div >
                     <div className={ styles.footerCustom }>
                         <p className={  styles.footerColor }>D-clic-web</p>
                         <p className={  styles.footerColor }>© 2022-Tous droits reservés</p>
