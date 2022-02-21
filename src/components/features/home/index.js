@@ -6,6 +6,18 @@ import logoSf from '../../images/logoSfG.png';
 import logoW from '../../images/logoWordpress.png';
 import logoSass from '../../images/logoSass.png';
 import logoBootstrap from '../../images/logoBootstrap.png';
+import logoReactC from '../../images/competences/logoReact.png';
+import logoBootstrapC from '../../images/competences/logoBootstrap.png';
+import logoSassC from '../../images/competences/logoSass.png';
+import logoWpC from '../../images/competences/logoWordpress.png';
+import logoVueC from '../../images/competences/logoVue.png';
+import logoSfC from '../../images/competences/logoSymfony.png';
+import logoPhpC from '../../images/competences/logoPhp.png';
+import logoJavaC from '../../images/competences/logoJava.png';
+import logoDart from '../../images/competences/logoDart.png';
+import logoFlutterC from '../../images/competences/logoFlutter.png';
+import logoNodeJsC from '../../images/competences/logoNodeJs.png'; 
+
 import { NavLink } from 'react-router-dom'; 
 
 import { Nav } from 'react-bootstrap'
@@ -41,15 +53,46 @@ class HomePage extends Component {
                     <p className={ styles.box1Texte1 }>Animé d'une curiosité intellectuelle, j'aime me tenir informé des dernières nouveautés.</p>
                     <p className={ styles.box1Texte2 }>Voici un aperçu des technologies que j'utilise actuellement.</p>
                     <div className={ styles.box1Logo }>
-                        <p>Ici les logos des différentes technologies avec leur description, leurs utilisation et leurs liens</p>
+                        <ul>
+                            <li>
+                                <img src={logoReactC} alt='logo react' className={styles.logoReactC} />
+                            </li>
+                            <li>
+                                <img src={logoVueC} alt='logo vue' className={styles.logoReactC} />
+                            </li>
+                            <li>
+                                <img src={logoSfC} alt='logo symfony' className={styles.logoReactC} />
+                            </li>
+                            <li>
+                                <img src={logoWpC} alt='logo wordpress' className={styles.logoReactC} />
+                            </li>
+                            <li>
+                                <img src={logoSassC} alt='logo sass' className={styles.logoReactC} />
+                            </li>
+                            <li>
+                                <img src={logoBootstrapC} alt='logo bootstrap' className={styles.logoReactC} />
+                            </li>
+                            <li>
+                                <img src={logoPhpC} alt='logo php' className={styles.logoReactC} />
+                            </li>
+                            <li>
+                                <img src={logoNodeJsC} alt='logo node js' className={styles.logoReactC} />
+                            </li>
+                        </ul>
                     </div>
                     <p className={ styles.box1Texte3 }>Pour l'instant, j'apprends</p>
                     <div className={ styles.box1Logo2 }>
-                        <p>ici les logos des différentes technologies avec leur description, leurs utilisation et leurs liens</p>
-                    </div>
-                    <p className={ styles.box1Texte4 }>Celles qui suscitent ma curiosité</p>
-                    <div className={ styles.box1Logo3 }>
-                        <p>ici les logo des différentes technologies avec leur description, leur utilisation et leurs liens</p>
+                        <ul>
+                            <li>
+                                <img src={logoJavaC} alt='logo java' className={styles.logoReactC} />
+                            </li>
+                            <li>    
+                                <img src={logoDart} alt='logo dart' className={styles.logoReactC} />
+                            </li>
+                            <li>
+                                <img src={logoFlutterC} alt='logo node js' className={styles.logoReactC} />
+                            </li>
+                        </ul>
                     </div>
                 </div>
 

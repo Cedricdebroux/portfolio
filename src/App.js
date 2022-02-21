@@ -162,6 +162,11 @@ class App extends Component {
                 speed: 1,
                 straight: true,
               },
+              gravity: {
+                acceleration: 0,
+                enable: true,
+                maxSpeed: 1,
+              },
               number: {
                 density: {
                   enable: true,
