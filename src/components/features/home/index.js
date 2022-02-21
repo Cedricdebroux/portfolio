@@ -49,40 +49,52 @@ class HomePage extends Component {
                 </div>
 
                 <div className={ styles.box1 }>
-                    <p className={ styles.box1Title1 }>Compétences</p>
-                    <p className={ styles.box1Texte1 }>Animé d'une curiosité intellectuelle, j'aime me tenir informé des dernières nouveautés.</p>
-                    <p className={ styles.box1Texte2 }>Voici un aperçu des technologies que j'utilise actuellement.</p>
+                    <div className={ styles.box1Text }>
+                        <h2 className={ styles.box1Title1 }>Compétences</h2>
+                        <p className={ styles.box1Texte1 }>Animé d'une curiosité intellectuelle, j'aime me tenir informé des dernières nouveautés.</p>
+                        <p className={ styles.box1Texte2 }>Voici un aperçu des technologies que j'utilise actuellement.</p>
+                    </div>
                     <div className={ styles.box1Logo }>
-                        <ul>
+                        <ul className={ styles.box1Ul}>
                             <li>
                                 <img src={logoReactC} alt='logo react' className={styles.logoReactC} />
+                                <p>React</p>
                             </li>
                             <li>
                                 <img src={logoVueC} alt='logo vue' className={styles.logoReactC} />
+                                <p>Vue</p>
                             </li>
                             <li>
                                 <img src={logoSfC} alt='logo symfony' className={styles.logoReactC} />
+                                <p>Symfony</p>
                             </li>
                             <li>
                                 <img src={logoWpC} alt='logo wordpress' className={styles.logoReactC} />
+                                <p>Wordpress</p>
                             </li>
                             <li>
                                 <img src={logoSassC} alt='logo sass' className={styles.logoReactC} />
+                                <p>Sass</p>
                             </li>
                             <li>
                                 <img src={logoBootstrapC} alt='logo bootstrap' className={styles.logoReactC} />
+                                <p>Bootstrap</p>
                             </li>
                             <li>
                                 <img src={logoPhpC} alt='logo php' className={styles.logoReactC} />
+                                <p>PHP</p>
                             </li>
                             <li>
                                 <img src={logoNodeJsC} alt='logo node js' className={styles.logoReactC} />
+                                <p>Node JS</p>
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div className={ styles.box1Learn }>
                     <p className={ styles.box1Texte3 }>Pour l'instant, j'apprends</p>
                     <div className={ styles.box1Logo2 }>
-                        <ul>
+                        <ul className={ styles.box1LearnUl}>
                             <li>
                                 <img src={logoJavaC} alt='logo java' className={styles.logoReactC} />
                             </li>
