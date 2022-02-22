@@ -12,16 +12,23 @@
     text-align: left;
 }
 .formButton {
-    background-color: #a5a5a5;
-    border-color: #a5a5a5;
-    width: 13rem;
-    font-size: 1.4rem;
-    color: #0d0a28;
+    background-color: #dfdede;
+    border-color: #dfdede;
+    width: 14rem;
+    font-size: 1.1rem;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
     box-shadow: 0;
   }
   .formButton:hover {
     background-color: #12606a;
     border-color: #12606a;
+  }
+  .navLink {
+    color: #0d0a28;
+    text-decoration: none;
+  }
+  .navLink:hover {
+    color: #0d0a28;
+    text-decoration: none;
   }

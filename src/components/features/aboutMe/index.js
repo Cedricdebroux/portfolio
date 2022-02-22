@@ -1,11 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import styles from "./AboutMe.module.css";
 import { Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import CV from '../../images/cv/cedric_debroux.pdf';
+import { saveAs } from "file-saver";
+import Cv from '../../images/cv/cedric_debroux.pdf';
 
-export default class AboutMe extends Component {
-  render() {
+export default function AboutMe () {
+  const saveFile = () => {
+    saveAs(
+      Cv,
+      "cedric_debroux.pdf"
+    );
+  };
     return (
       <>
         <div>
@@ -43,6 +49,7 @@ export default class AboutMe extends Component {
           <button className={ styles.formButton}>
               <Nav.Link as={NavLink} className={ styles.navLink } to="/contact">Contactez-moi</Nav.Link>
           </button>
+          <button onClick={saveFile}>download</button>
           {/* contactez-moi ! bouton  */}
 
 
@@ -52,5 +59,4 @@ export default class AboutMe extends Component {
         </div>
       </>
     );
-  }
 }
