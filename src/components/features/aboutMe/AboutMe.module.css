@@ -19,10 +19,28 @@
     border-radius: 10px;
     padding: 5px;
     box-shadow: 0;
+    transition: all 0.3s ease-in-out;
   }
   .formButton:hover {
     background-color: #12606a;
     border-color: #12606a;
+    transform: scale(1.1); 
+  }
+  .formButtonDown {
+    background-color: #dfdede;
+    border-color: #dfdede;
+    width: 14rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    padding: 13px;
+    box-shadow: 0;
+    margin-left: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  .formButtonDown:hover {
+    background-color: #12606a;
+    border-color: #12606a;
+    transform: scale(1.1);
   }
   .navLink {
     color: #0d0a28;

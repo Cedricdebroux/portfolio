@@ -49,7 +49,7 @@ export default function AboutMe () {
           <button className={ styles.formButton}>
               <Nav.Link as={NavLink} className={ styles.navLink } to="/contact">Contactez-moi</Nav.Link>
           </button>
-          <button onClick={saveFile}>download</button>
+          <button onClick={saveFile} className={ styles.formButtonDown}>Télécharger mon CV</button>
           {/* contactez-moi ! bouton  */}
 
 
