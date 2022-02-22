@@ -277,8 +277,8 @@
     justify-content: center;
   }
   .box1Ul li {
-    justify-content: center;
     margin-bottom: 60px;
+    width: 160px;
   }
   .box1Learn {
     justify-content: center;
@@ -288,10 +288,11 @@
     justify-content: center;
   }
   .box1LearnUl {
-    justify-content: center;
+    justify-content: start;
   }
   .box1LearnUl li {
     margin-bottom: 60px;
+    width: 160px;
   }
 }
 
