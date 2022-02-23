@@ -1,3 +1,6 @@
+.aboutMe {
+  margin-bottom: 150px;
+}
 .title {
     color: #dfdede;
     font-size: 2.8rem;
@@ -5,6 +8,14 @@
     font-family: play;
     margin-top: 10vh;
     margin-bottom: 7vh;
+}
+.titleH {
+  color: #dfdede;
+  font-size: 2.8rem;
+  text-align: center;
+  font-family: play;
+  margin-top: 10vh;
+  margin-bottom: 2vh;
 }
 .text {
     color: #a5a5a5;
@@ -20,6 +31,7 @@
     padding: 5px;
     box-shadow: 0;
     transition: all 0.3s ease-in-out;
+    margin-top: 25px;
   }
   .formButton:hover {
     background-color: #12606a;
@@ -34,7 +46,7 @@
     border-radius: 10px;
     padding: 13px;
     box-shadow: 0;
-    margin-left: 50px;
+    margin-top: 25px;
     transition: all 0.3s ease-in-out;
   }
   .formButtonDown:hover {
@@ -49,4 +61,18 @@
   .navLink:hover {
     color: #0d0a28;
     text-decoration: none;
+  }
+  .logoHorizon {
+    text-align: center;
+    margin-bottom: 50px;
+  }.logoH1 {
+    margin-top: 15px;
+  }
+  .logoH2 {
+    margin-bottom: 15px;
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  .logoH3 {
+    margin-top:15px;
   }

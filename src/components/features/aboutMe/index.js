@@ -4,6 +4,9 @@ import { Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { saveAs } from "file-saver";
 import Cv from '../../images/cv/cedric_debroux.pdf';
+import logoDart from '../../images/competences/logoDart.png';
+import logoFlutter from '../../images/competences/logoFlutter.png';
+import logoJava from '../../images/competences/logoJava.png';
 
 export default function AboutMe () {
   const saveFile = () => {
@@ -14,7 +17,7 @@ export default function AboutMe () {
   };
     return (
       <>
-        <div>
+        <div className={ styles.aboutMe}>
           <h1 className={ styles.title }>
             Il était une fois
           </h1>
@@ -49,13 +52,32 @@ export default function AboutMe () {
           <button className={ styles.formButton}>
               <Nav.Link as={NavLink} className={ styles.navLink } to="/contact">Contactez-moi</Nav.Link>
           </button>
-          <button onClick={saveFile} className={ styles.formButtonDown}>Télécharger mon CV</button>
-          {/* contactez-moi ! bouton  */}
 
-
-          <h2 className={ styles.title }>
+          <h2 className={ styles.titleH }>
             À l'horizon
           </h2>
+          <div className={ styles.logoHorizon }>
+            <img className={ styles.logoH1 } src={logoDart} alt="logo Dart"/>
+            <img className={ styles.logoH2 } src={logoFlutter} alt="logo Flutter"/>
+            <img className={ styles.logoH3 } src={logoJava} alt="logo Java"/>
+          </div>
+          <p className={ styles.text }>
+            Je suis toujours à la recherche d'un nouveau challenge et de nouveaux défis.
+          </p>
+          <p className={ styles.text }>
+            Flutter, Dart , Java, sont les prochains langages que je souhaite approfondir.
+          </p>
+          <p className={ styles.text }>
+            Flutter est un framework de développement web qui permet de créer des applications mobiles en utilisant le langage Dart.
+            C'est suffisant pour éveiller ma curiosité, pour moi, il fait partie des frameworks incontournables à l'aire du digitale.
+          </p>
+          <p className={ styles.text }>
+            Java est un langage de programmation orienté objet qui a fait ses preuves, étant très utilisé à travers le monde, je ne pouvais pas passer à côté. 
+          </p>
+          <p className={ styles.text }>
+            Le monde du développement est en perpétuelle évolution, c'est ce qui me plait ! J'ai hâte de découvrir ce que l'avenir nous réserve.
+          </p>
+          <button onClick={saveFile} className={ styles.formButtonDown}>Télécharger mon CV</button>
         </div>
       </>
     );

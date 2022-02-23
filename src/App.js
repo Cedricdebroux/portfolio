@@ -6,6 +6,7 @@ import ContactMe from './components/features/contact';
 import AboutMe from './components/features/aboutMe';
 import Works from './components/features/works';
 import Loading from './components/utils/Loading';
+import Projet1 from './components/features/works/projets/projet1/';
 import { BrowserRouter as Router, Route, NavLink, Redirect } from 'react-router-dom'; 
 import { CSSTransition } from 'react-transition-group';
 import { Container, Navbar, Nav } from 'react-bootstrap'
@@ -93,6 +94,7 @@ class App extends Component {
                     </div>
                   </CSSTransition>
                 )}
+                
               </Route>
             ))}
             <Redirect to="/home" />
@@ -188,6 +190,21 @@ class App extends Component {
             detectRetina: true,
           }}
           />
+        
+          <Route path="/works/job1" component={Projet1}>
+          {({ match }) => (
+                  <CSSTransition
+                    in={match != null}
+                    timeout={300}
+                    classNames="page"
+                    unmountOnExit
+                  >
+                    <div className="page">
+                      <Projet1 />
+                    </div>
+                  </CSSTransition>
+                )}
+          </Route>
           </>
           ) :(
           <Loading />) }

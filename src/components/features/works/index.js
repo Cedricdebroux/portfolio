@@ -1,15 +1,14 @@
-import React, { Component } from "react";
-import styles from "./Works.module.css";
+import React from 'react';
+
+import { NavLink } from 'react-router-dom'; 
+
+import { Nav } from 'react-bootstrap'
 
 
-export default class Works extends Component {
-    render() {
-        return (
-            <>
-                <div className="container">
-                    <p className={ styles.title }>Réalisations</p>
-                </div>
-            </>
-        );
-    }
+export default function Works() {
+  return (
+    <>
+    <Nav.Link as={NavLink} to="/works/job1">job1</Nav.Link>
+    </>
+  )
 }
