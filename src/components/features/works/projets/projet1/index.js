@@ -17,11 +17,13 @@ function Projet1() {
           Projet React
         </h2>
         <div className={ styles.content }>
-          <p className={ styles.text}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum soluta eius fugit atque, iste omnis corrupti laboriosam, commodi nobis placeat nihil, itaque non nesciunt voluptate delectus ea accusamus blanditiis architecto!
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum soluta eius fugit atque, iste omnis corrupti laboriosam, commodi nobis placeat nihil, itaque non nesciunt voluptate delectus ea accusamus blanditiis architecto!  
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum soluta eius fugit atque, iste omnis corrupti laboriosam, commodi nobis placeat nihil, itaque non nesciunt voluptate delectus ea accusamus blanditiis architecto!  
-          </p>
+          <div className={ styles.boxText }>
+            <p className={ styles.text}>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum soluta eius fugit atque, iste omnis corrupti laboriosam, commodi nobis placeat nihil, itaque non nesciunt voluptate delectus ea accusamus blanditiis architecto!
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum soluta eius fugit atque, iste omnis corrupti laboriosam, commodi nobis placeat nihil, itaque non nesciunt voluptate delectus ea accusamus blanditiis architecto!  
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum soluta eius fugit atque, iste omnis corrupti laboriosam, commodi nobis placeat nihil, itaque non nesciunt voluptate delectus ea accusamus blanditiis architecto!  
+            </p>
+          </div>
           <div className={ styles.images }>
           <img className={ styles.images } src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""/>
           <img className={ styles.images } src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""/>
