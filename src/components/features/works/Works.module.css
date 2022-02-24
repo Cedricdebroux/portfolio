@@ -33,9 +33,7 @@
 .containerProjet1 {
     margin-bottom: 150px;
 }
-.boxText {
-    width: 45%;
-}
+
 
 @media screen and (max-width: 430px) {
     .text {
