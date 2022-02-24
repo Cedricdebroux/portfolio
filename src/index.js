@@ -12,6 +12,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ReactDOM.render(
+  
   <Footer />
   ,
   document.getElementById('footer')

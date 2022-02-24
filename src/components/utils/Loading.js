@@ -1,8 +1,9 @@
 import React from 'react';
-import styles from './Loading.module.css'
+import styles from './Loading.module.css';
 import GifLoading from './gif_loading.gif';
 
 function Loading() {
+  
     return(
       <div className={ styles.loading }>
         <div style={{ minHeight: '100vh' }} className="d-flex flex-row justify-content-center align-items-center w-100">

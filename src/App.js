@@ -205,6 +205,20 @@ class App extends Component {
                   </CSSTransition>
                 )}
           </Route>
+          <Route path="/works/job2" component={Projet1}>
+          {({ match }) => (
+                  <CSSTransition
+                    in={match != null}
+                    timeout={300}
+                    classNames="page"
+                    unmountOnExit
+                  >
+                    <div className="page">
+                      <Projet1 />
+                    </div>
+                  </CSSTransition>
+                )}
+          </Route>
           </>
           ) :(
           <Loading />) }

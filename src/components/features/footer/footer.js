@@ -4,10 +4,25 @@ import logoGit from '../../images/logoGithub.png';
 import logoLinkedin from '../../images/logoLinkedin.png';
 import logoMail from '../../images/logoMail.png';
 import logoBadge from '../../images/logoBadge.png';
+import LoadingFooter from '../../utils/LoadingFooter';
 class Footer extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+          content: null,
+          loaded: false
+        }
+    
+        setTimeout( () => {
+          this.setState({
+            loaded: true
+          })
+        }, 3000);
+      }
     render() {
         return (
             <>
+            { this.state.loaded ? (
                 <div >
                     <div className={ styles.footerCustom }>
                         <p className={  styles.footerColor }>D-clic-web</p>
@@ -20,8 +35,11 @@ class Footer extends Component {
                         </div>
                     </div>
                 </div>
+            ) :(
+                <LoadingFooter />) }
             </>
         );
     }
 }
+
 export default Footer;
