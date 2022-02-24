@@ -4,7 +4,7 @@ import styles from './Loading.module.css';
 function LoadingFooter() {
   
     return(
-      <div className={ styles.loading }>
+      <div className={ styles.loadingFooter }>
       </div>
     );
 }

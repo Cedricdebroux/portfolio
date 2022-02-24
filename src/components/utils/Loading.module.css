@@ -1,7 +1,9 @@
 .loading {
     background-color: #0d0a28;
 }
-
+.loadingFooter {
+    display: none;
+}
     
 
 

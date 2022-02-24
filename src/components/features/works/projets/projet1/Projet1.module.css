@@ -1,5 +1,47 @@
 .title {
-    font-size: 1.8rem;
-    margin-top: 300px;
-    color: white;
+    color: #dfdede;
+    font-size: 2.8em;
+    font-family: Play;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.back {
+    display: block;
+    justify-content: start;
+    position: absolute;
+    top: 50px;
+}
+.text {
+    width: 45%;
+    color: #dfdede;
+}
+.images {
+    width: 550px;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media screen and (max-width: 430px) {
+    .text {
+        font-size: 1.4em;
+        width: 100vw;
+        color: #dfdede;
+    }
+    .images {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .containerProjet1 {
+        margin-bottom: 150px;
+    }
+    .back {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 50px;
+        left: 45%;
+    }
 }
