@@ -7,6 +7,11 @@ import AboutMe from './components/features/aboutMe';
 import Works from './components/features/works';
 import Loading from './components/utils/Loading';
 import Projet1 from './components/features/works/projets/projet1/';
+import Projet2 from './components/features/works/projets/projet2/';
+import Projet3 from './components/features/works/projets/projet3/';
+import Projet4 from './components/features/works/projets/projet4/';
+import Projet5 from './components/features/works/projets/projet5/';
+import Projet6 from './components/features/works/projets/projet6/';
 import { BrowserRouter as Router, Route, NavLink, Redirect } from 'react-router-dom'; 
 import { CSSTransition } from 'react-transition-group';
 import { Container, Navbar, Nav } from 'react-bootstrap'
@@ -205,7 +210,7 @@ class App extends Component {
                   </CSSTransition>
                 )}
           </Route>
-          <Route path="/works/job2" component={Projet1}>
+          <Route path="/works/job2" component={Projet2}>
           {({ match }) => (
                   <CSSTransition
                     in={match != null}
@@ -214,7 +219,63 @@ class App extends Component {
                     unmountOnExit
                   >
                     <div className="page">
-                      <Projet1 />
+                      <Projet2 />
+                    </div>
+                  </CSSTransition>
+                )}
+          </Route>
+          <Route path="/works/job3" component={Projet3}>
+          {({ match }) => (
+                  <CSSTransition
+                    in={match != null}
+                    timeout={300}
+                    classNames="page"
+                    unmountOnExit
+                  >
+                    <div className="page">
+                      <Projet3 />
+                    </div>
+                  </CSSTransition>
+                )}
+          </Route>
+          <Route path="/works/job4" component={Projet4}>
+          {({ match }) => (
+                  <CSSTransition
+                    in={match != null}
+                    timeout={300}
+                    classNames="page"
+                    unmountOnExit
+                  >
+                    <div className="page">
+                      <Projet4 />
+                    </div>
+                  </CSSTransition>
+                )}
+          </Route>
+          <Route path="/works/job5" component={Projet5}>
+          {({ match }) => (
+                  <CSSTransition
+                    in={match != null}
+                    timeout={300}
+                    classNames="page"
+                    unmountOnExit
+                  >
+                    <div className="page">
+                      <Projet5 />
+                    </div>
+                  </CSSTransition>
+                )}
+          </Route>
+          <Route path="/works/job6" component={Projet6}>
+          {({ match }) => (
+                  <CSSTransition
+                    in={match != null}
+                    timeout={300}
+                    classNames="page"
+                    unmountOnExit
+                  >
+                    <div className="page">
+                      <Projet6 />
                     </div>
                   </CSSTransition>
                 )}
