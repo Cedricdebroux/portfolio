@@ -3,6 +3,8 @@ import styles from "./Projet1.module.css";
 import { NavLink } from 'react-router-dom'; 
 import { Nav } from 'react-bootstrap';
 import back from '../../../../images/pictos/back.png';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/splide.min.css';
 
 
 function Projet1() {
@@ -25,9 +27,26 @@ function Projet1() {
             </p>
           </div>
           <div className={ styles.images }>
-          <img className={ styles.images } src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""/>
-          <img className={ styles.images } src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""/>
-          <img className={ styles.images } src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""/>
+            <Splide 
+               options={ {
+                  autoplay: true,
+                  rewind: true,
+                  gap   : '1rem',
+                  type  : 'loop',
+                  speed : 2000,
+                  interval : 800,
+              } }
+            >
+              <SplideSlide>
+                <img className={ styles.images } src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""/>
+              </SplideSlide>
+              <SplideSlide>
+                <img className={ styles.images } src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""/>
+              </SplideSlide>
+              <SplideSlide>
+                <img className={ styles.images } src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""/>
+              </SplideSlide>
+            </Splide>
           </div>
         </div>
         </div>
