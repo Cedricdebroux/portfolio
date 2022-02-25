@@ -30,7 +30,7 @@ class Footer extends Component {
                         <div className={ styles.footerLogo }>
                             <a href='https://github.com/Cedricdebroux'><img className='mr-3' src={ logoGit } alt="logoGit"/></a>
                             <a href='https://www.linkedin.com/in/cedric-debroux/'><img className='mr-3' src={ logoLinkedin } alt="logoLinkedin"/></a>
-                            <a href='mailto:cedric@debroux.ovh'><img className='mr-3' src={ logoMail } alt="logoMail"/></a>
+                            <a href='mailto:contact@cedric-debroux.be'><img className='mr-3' src={ logoMail } alt="logoMail"/></a>
                             <a href='https://api.badgr.io/public/collections/6d95526bbb76c6b3de1579e55e591307'><img src={ logoBadge } alt="logoBadge"/></a>
                         </div>
                     </div>
