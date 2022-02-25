@@ -17,7 +17,7 @@ if (name.length === 0 || phone.length === 0 || email.length === 0 || message.len
   document.querySelector('.send-invalid-input').innerHTML = "Merci de remplir tous les champs.";
   document.querySelector('.send-invalid').innerHTML = "";
 } else {
-    emailjs.sendForm('service_a0tesa5', 'template_3xerq0d', form.current, 'user_F9oLBdeip2nX42IiAdsYr')
+    emailjs.sendForm(process.env.REACT_APP_MAILJS_SERVICE_ID, process.env.REACT_APP_MAILJS_TEMPLATE, form.current, process.env.REACT_APP_MAILJS_USER)
       .then((result) => {
         setName("");
         setCompany("");
