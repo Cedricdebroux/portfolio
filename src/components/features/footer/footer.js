@@ -25,7 +25,7 @@ class Footer extends Component {
             { this.state.loaded ? (
                 <div >
                     <div className={ styles.footerCustom }>
-                        <p className={  styles.footerColor }>D-clic-web</p>
+                        <p className={  styles.footerColor }>Cédric Debroux</p>
                         <p className={  styles.footerColor }>© 2022-Tous droits reservés</p>
                         <div className={ styles.footerLogo }>
                             <a href='https://github.com/Cedricdebroux'><img className='mr-3' src={ logoGit } alt="logoGit"/></a>

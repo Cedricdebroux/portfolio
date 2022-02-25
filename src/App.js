@@ -16,6 +16,7 @@ import { BrowserRouter as Router, Route, NavLink, Redirect } from 'react-router-
 import { CSSTransition } from 'react-transition-group';
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
+import logoCed from './components/images/logoCed.png';
 
 
 const particlesInit = (main) => {
@@ -60,7 +61,9 @@ class App extends Component {
 
         <Navbar fixed="top" variant="dark" expand="md" className='navBarBg'>
         <Container fluid>
-        <Navbar.Brand className='logo-accueil' href="/">D-clic-web</Navbar.Brand>
+        <Navbar.Brand className='logo-accueil' href="/">
+          <img src={logoCed} alt="logo" className='logo-ced' />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
         <Nav
