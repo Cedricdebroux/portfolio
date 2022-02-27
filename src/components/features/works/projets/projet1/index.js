@@ -39,6 +39,9 @@ function Projet1() {
             <p className={ styles.text}>
               Pour l'instant, il n'est pas encore relié à une base de données, mais ce projet est encore amené à évoluer.
             </p>
+            <p className={ styles.text}>
+              <a href="https://movies.cedric-debroux.be/" target="blank">Projet film</a>
+            </p>
           </div>
           <div className={ styles.images }>
             <Splide 
