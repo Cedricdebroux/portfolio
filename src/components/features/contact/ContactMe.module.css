@@ -2,7 +2,7 @@
   background-color: #dfdede;
   padding: 30px 30px 15px 30px;
   border-radius: 20px;
-  margin-top: 40vh;
+  margin-top: 35vh;
   transform: translateY(-50%);
 }
 .formButton {
@@ -46,6 +46,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.title {
+  color: #dfdede;
+  font-size: 2.5rem;
+  margin-top: 80px;
+  font-family: Play;
+  text-align: center
 }
 @media screen and (max-width: 430px) {
   .formButton {
