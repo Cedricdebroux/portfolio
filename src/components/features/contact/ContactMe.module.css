@@ -2,7 +2,7 @@
   background-color: #dfdede;
   padding: 30px 30px 15px 30px;
   border-radius: 20px;
-  margin-top: 35vh;
+  margin-top: 30vh;
   transform: translateY(-50%);
 }
 .formButton {
@@ -50,7 +50,7 @@
 .title {
   color: #dfdede;
   font-size: 2.5rem;
-  margin-top: 80px;
+  margin-top: 180px;
   font-family: Play;
   text-align: center
 }

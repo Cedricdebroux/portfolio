@@ -11,7 +11,6 @@ import Projet2 from './components/features/works/projets/projet2/';
 import Projet3 from './components/features/works/projets/projet3/';
 import Projet4 from './components/features/works/projets/projet4/';
 import Projet5 from './components/features/works/projets/projet5/';
-import Projet6 from './components/features/works/projets/projet6/';
 import { BrowserRouter as Router, Route, NavLink, Redirect } from 'react-router-dom'; 
 import { CSSTransition } from 'react-transition-group';
 import { Container, Navbar, Nav } from 'react-bootstrap'
@@ -265,20 +264,6 @@ class App extends Component {
                   >
                     <div className="page">
                       <Projet5 />
-                    </div>
-                  </CSSTransition>
-                )}
-          </Route>
-          <Route path="/works/job6" component={Projet6}>
-          {({ match }) => (
-                  <CSSTransition
-                    in={match != null}
-                    timeout={300}
-                    classNames="page"
-                    unmountOnExit
-                  >
-                    <div className="page">
-                      <Projet6 />
                     </div>
                   </CSSTransition>
                 )}

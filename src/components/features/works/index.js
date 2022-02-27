@@ -2,6 +2,11 @@ import React from 'react';
 import { NavLink } from 'react-router-dom'; 
 import { Nav } from 'react-bootstrap';
 import styles from './Works.module.css';
+import movieHome from '../../images/works/movies/home480.webp';
+import webShop from '../../images/works/webshop/home480.webp';
+import btc from '../../images/works/btc/btc480.webp';
+import wordpress from '../../images/works/restaurant/restaurant480.webp';
+import forum from '../../images/works/forum/forum480.webp';
 
 
 export default function Works() {
@@ -15,138 +20,91 @@ export default function Works() {
     <Nav.Link as={NavLink} to="/works/job1">
       <div className={ styles.content }>
           <div className={ styles.boxText }>
-            <h2 className={ styles.subTitle }>Projet 1</h2>
+            <h2 className={ styles.subTitle }>Film</h2>
 
             <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, cof adipiscing elit.
+              Ce projet fait avec React était l'occasion de me
             </p>
             <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              remettre au front-end avec un framework javascript.
             </p>
           </div>
           <div className={ styles.images }>
-            <img className={ styles.images } src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""/>
+            <img className={ styles.images } src={ movieHome } alt="movie home"/>
           </div>
         </div>
     </Nav.Link>
     <Nav.Link as={NavLink} to="/works/job2">
     <div className={ styles.content }>
           <div className={ styles.boxText }>
-            <h2 className={ styles.subTitle }>Projet 2</h2>
+            <h2 className={ styles.subTitle }>E-commerce</h2>
 
             <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, cof adipiscing elit.
+              E-commerce réalisé avec Symfony 5, PHP, Vue. 
             </p>
             <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ce projet à été réalisé en entreprise, les images ont été
             </p>
             <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              floutées pour des raisons de confidentialité.
             </p>
           </div>
           <div className={ styles.images }>
-            <img className={ styles.images } src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""/>
+            <img className={ styles.images } src={ webShop } alt="E-commerce"/>
           </div>
         </div>
     </Nav.Link>
     <Nav.Link as={NavLink} to="/works/job3">
     <div className={ styles.content }>
           <div className={ styles.boxText }>
-            <h2 className={ styles.subTitle }>Projet 3</h2>
+            <h2 className={ styles.subTitle }>Jeux</h2>
 
             <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, cof adipiscing elit.
+              Jeu qui permet l'achat (fictif) d'arbres de la ville de Liège.
             </p>
             <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ce dernier a été réalisé avec React, NodeJS, MongoDB,
             </p>
             <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Leaflet, OpenstreetMap.
             </p>
           </div>
           <div className={ styles.images }>
-            <img className={ styles.images } src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""/>
+            <img className={ styles.images } src={ btc } alt="btc"/>
           </div>
         </div>
     </Nav.Link>
     <Nav.Link as={NavLink} to="/works/job4">
     <div className={ styles.content }>
           <div className={ styles.boxText }>
-            <h2 className={ styles.subTitle }>Projet 4</h2>
+            <h2 className={ styles.subTitle }>Wordpress</h2>
 
             <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, cof adipiscing elit.
+              Projet réalisé avec Wordpress, PHP.
             </p>
             <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Chez BeCode dans le cadre de mon apprentissage.
             </p>
           </div>
           <div className={ styles.images }>
-            <img className={ styles.images } src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""/>
+            <img className={ styles.images } src={ wordpress } alt="restaurant"/>
           </div>
         </div>
     </Nav.Link>
     <Nav.Link as={NavLink} to="/works/job5">
       <div className={ styles.content }>
           <div className={ styles.boxText }>
-            <h2 className={ styles.subTitle }>Projet 5</h2>
+            <h2 className={ styles.subTitle }>Forum</h2>
 
             <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, cof adipiscing elit.
+              Forum réalisé avec PHP, SQL, Bootstrap.
             </p>
             <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Chez BeCode dans le cadre de mon apprentissage.
             </p>
           </div>
           <div className={ styles.images }>
-            <img className={ styles.images } src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""/>
-          </div>
-        </div>
-    </Nav.Link>
-    <Nav.Link as={NavLink} to="/works/job6">
-    <div className={ styles.content }>
-          <div className={ styles.boxText }>
-            <h2 className={ styles.subTitle }>Projet 6</h2>
-
-            <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, cof adipiscing elit.
-            </p>
-            <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p className={ styles.text }>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-          </div>
-          <div className={ styles.images }>
-            <img className={ styles.images } src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""/>
+            <img className={ styles.images } src={ forum } alt="forum"/>
           </div>
         </div>
     </Nav.Link>
