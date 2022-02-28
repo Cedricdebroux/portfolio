@@ -4,6 +4,22 @@
 .loadingFooter {
     display: none;
 }
+.loadingImg {
+    width: auto;
+    height: 100vh;
+}
     
 
 
+@media screen and (max-width: 430px) {
+    .loadingImg {
+        width: 100vw;
+        height: auto;
+    } 
+}
+@media screen and (min-width: 431px) and (max-width: 840px) {
+    .loadingImg {
+        width: 100vw;
+        height: auto;
+    } 
+}

@@ -7,7 +7,7 @@ function Loading() {
     return(
       <div className={ styles.loading }>
         <div style={{ minHeight: '100vh' }} className="d-flex flex-row justify-content-center align-items-center w-100">
-          <img alt="loading gif" className='w-100' src={GifLoading} />
+          <img alt="loading gif" className={ styles.loadingImg } src={GifLoading} />
         </div>
       </div>
     );
