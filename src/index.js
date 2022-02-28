@@ -4,19 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Footer from './components/features/footer/footer';
+import registerServiceWorker from 'react-service-worker';
 
+const appSW = registerServiceWorker()
+
+ReactDOM.render(<App appServiceWorker={appSW} />, document.getElementById('root'));
 ReactDOM.render(
   
-    <App />
-  ,
-  document.getElementById('root')
-);
-ReactDOM.render(
-  
-  <Footer />
+  <Footer appServiceWorker={appSW} />
   ,
   document.getElementById('footer')
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

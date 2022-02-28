@@ -69,7 +69,7 @@ export default function AboutMe () {
           </p>
           <p className={ styles.text }>
             Flutter est un framework de développement web qui permet de créer des applications mobiles en utilisant le langage Dart.
-            C'est suffisant pour éveiller ma curiosité, pour moi, il fait partie des frameworks incontournables à l'aire du digitale.
+            C'est suffisant pour éveiller ma curiosité, pour moi, il fait partie des frameworks incontournables à l'air du digital.
           </p>
           <p className={ styles.text }>
             Java est un langage de programmation orienté objet qui a fait ses preuves, étant très utilisé à travers le monde, je ne pouvais pas passer à côté. 

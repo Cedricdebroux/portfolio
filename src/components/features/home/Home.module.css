@@ -78,6 +78,18 @@
   color: #dfdede;
   font-family: Play;
 }
+.textCitation{
+  font-size: 1.4rem;
+  color: #dfdede;
+  font-family: Play;
+  display: flex;
+  justify-content: center;
+  
+}
+.textCitationLink {
+  color: #dfdede;
+  text-decoration: none;
+}
 .boxAboutMe p {
   margin-bottom: 0px;
 }
@@ -249,6 +261,7 @@
     color: #dfdede;
     font-family: Play;
   }
+  
   .boxAboutMe {
     display: flex;
     justify-content: center;

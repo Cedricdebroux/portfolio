@@ -55,8 +55,8 @@ function Projet3() {
                   rewind: true,
                   gap   : '1rem',
                   type  : 'loop',
-                  speed : 2000,
-                  interval : 800,
+                  speed : 3000,
+                  interval : 1000,
               } }
             >
               <SplideSlide>

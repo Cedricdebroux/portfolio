@@ -42,7 +42,10 @@ class HomePage extends Component {
             </div>
 
                 <div className={ styles.boxAboutMe }>
-                    <p className={ styles.titleAboutMe }>Après une reconversion professionelle réussie, ma passion est devenue mon métier.</p>
+                    <div className={ styles.boxAboutMe2 }>
+                        <p className={ styles.titleAboutMe }>« Choisis un travail que tu aimes, et tu n’auras pas à travailler un seul jour dans ta vie ».</p>
+                        <a href="https://fr.wikipedia.org/wiki/Confucius" target="blank" className={ styles.textCitationLink }><p className={ styles.textCitation }>- CONFUCIUS -</p></a>
+                    </div>
                     <button className={ styles.buttonAboutMe }>
                         <Nav.Link as={NavLink} className={ styles.navLinkMe } to="/about">À propos de moi</Nav.Link>
                     </button>

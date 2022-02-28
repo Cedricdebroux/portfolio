@@ -17,7 +17,7 @@ export default function Works() {
           <h1 className={styles.title}>
             Mes réalisations
           </h1>
-          <Nav.Link as={NavLink} to="/works/job1">
+          <Nav.Link as={NavLink} to="/works/movies">
             <div className={styles.content}>
               <div className={styles.boxText}>
                 <h2 className={styles.subTitle}>Film</h2>
@@ -34,7 +34,7 @@ export default function Works() {
               </div>
             </div>
           </Nav.Link>
-          <Nav.Link as={NavLink} to="/works/job2">
+          <Nav.Link as={NavLink} to="/works/ecommerce">
             <div className={styles.content}>
               <div className={styles.boxText}>
                 <h2 className={styles.subTitle}>E-commerce</h2>
@@ -54,7 +54,7 @@ export default function Works() {
               </div>
             </div>
           </Nav.Link>
-          <Nav.Link as={NavLink} to="/works/job3">
+          <Nav.Link as={NavLink} to="/works/game">
             <div className={styles.content}>
               <div className={styles.boxText}>
                 <h2 className={styles.subTitle}>Jeux</h2>
@@ -74,7 +74,7 @@ export default function Works() {
               </div>
             </div>
           </Nav.Link>
-          <Nav.Link as={NavLink} to="/works/job4">
+          <Nav.Link as={NavLink} to="/works/restaurant">
             <div className={styles.content}>
               <div className={styles.boxText}>
                 <h2 className={styles.subTitle}>Wordpress</h2>
@@ -91,7 +91,7 @@ export default function Works() {
               </div>
             </div>
           </Nav.Link>
-          <Nav.Link as={NavLink} to="/works/job5">
+          <Nav.Link as={NavLink} to="/works/forum">
             <div className={styles.content}>
               <div className={styles.boxText}>
                 <h2 className={styles.subTitle}>Forum</h2>
