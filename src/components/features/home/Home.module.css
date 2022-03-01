@@ -324,7 +324,7 @@
     height: 340px;
     position: absolute;
     top: 24vh;
-    left: 5%;
+    left: 6%;
     animation: boxImg infinite 300s linear;
     overflow: hidden;
     border-radius: 50%;
@@ -368,7 +368,13 @@ only screen and (                min-resolution: 192dpi) and (min-width: 1300px)
 only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) { 
 
  .boxImg {
+   width: 560px;
+   height: 560px;
+   left: 25%;
    top:8vh;
+ }
+ .welcomBox {
+    margin-top: 30vh;
  }
 
 }
