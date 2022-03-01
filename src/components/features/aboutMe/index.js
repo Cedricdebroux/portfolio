@@ -57,9 +57,9 @@ export default function AboutMe () {
             À l'horizon
           </h2>
           <div className={ styles.logoHorizon }>
-            <img className={ styles.logoH1 } src={logoDart} alt="logo Dart"/>
-            <img className={ styles.logoH2 } src={logoFlutter} alt="logo Flutter"/>
-            <img className={ styles.logoH3 } src={logoJava} alt="logo Java"/>
+            <img className={ styles.logoH1 } src={logoDart} alt="logo Dart" width="30" heigh="30"/>
+            <img className={ styles.logoH2 } src={logoFlutter} alt="logo Flutter" width="30" heigh="30"/>
+            <img className={ styles.logoH3 } src={logoJava} alt="logo Java" width="30" heigh="30"/>
           </div>
           <p className={ styles.text }>
             Je suis toujours à la recherche d'un nouveau challenge et de nouveaux défis.

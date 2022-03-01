@@ -30,7 +30,7 @@ export default function Works() {
                 </p>
               </div>
               <div className={styles.images}>
-                <img className={styles.images} src={movieHome} alt="movie home" />
+                <img className={styles.images} src={movieHome} alt="movie home" width="480" heigh="320" />
               </div>
             </div>
           </Nav.Link>
@@ -50,7 +50,7 @@ export default function Works() {
                 </p>
               </div>
               <div className={styles.images}>
-                <img className={styles.images} src={webShop} alt="E-commerce" />
+                <img className={styles.images} src={webShop} alt="E-commerce" width="480" heigh="320" />
               </div>
             </div>
           </Nav.Link>
@@ -70,7 +70,7 @@ export default function Works() {
                 </p>
               </div>
               <div className={styles.images}>
-                <img className={styles.images} src={btc} alt="btc" />
+                <img className={styles.images} src={btc} alt="btc" width="480" heigh="320" />
               </div>
             </div>
           </Nav.Link>
@@ -87,7 +87,7 @@ export default function Works() {
                 </p>
               </div>
               <div className={styles.images}>
-                <img className={styles.images} src={wordpress} alt="restaurant" />
+                <img className={styles.images} src={wordpress} alt="restaurant" width="480" heigh="320" />
               </div>
             </div>
           </Nav.Link>
@@ -104,7 +104,7 @@ export default function Works() {
                 </p>
               </div>
               <div className={styles.images}>
-                <img className={styles.images} src={forum} alt="forum" />
+                <img className={styles.images} src={forum} alt="forum" width="480" heigh="320" />
               </div>
             </div>
           </Nav.Link>

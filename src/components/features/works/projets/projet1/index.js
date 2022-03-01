@@ -15,7 +15,7 @@ function Projet1() {
   return (
    <div className="container">
      <Nav.Link as={NavLink} to="/works">
-       <img src={back} alt="back" className={styles.back}/>
+       <img src={back} alt="back" className={styles.back} width="47" heigh="30"/>
      </Nav.Link>
      <div className={ styles.containerProjet1 }>
         <h1 className={ styles.title }>Projet Film</h1>
@@ -55,16 +55,16 @@ function Projet1() {
               } }
             >
               <SplideSlide>
-                <img className={ styles.images } src={page1} alt="page 1 movies"/>
+                <img className={ styles.images } src={page1} alt="page 1 movies" width="480" heigh="320"/>
               </SplideSlide>
               <SplideSlide>
-                <img className={ styles.images } src={page2} alt="page2 movies"/>
+                <img className={ styles.images } src={page2} alt="page2 movies" width="480" heigh="320"/>
               </SplideSlide>
               <SplideSlide>
-                <img className={ styles.images } src={page3} alt="page3 movies"/>
+                <img className={ styles.images } src={page3} alt="page3 movies" width="480" heigh="320"/>
               </SplideSlide>
               <SplideSlide>
-                <img className={ styles.images } src={page4} alt="page4 movies"/>
+                <img className={ styles.images } src={page4} alt="page4 movies" width="480" heigh="320"/>
               </SplideSlide>
             </Splide>
           </div>

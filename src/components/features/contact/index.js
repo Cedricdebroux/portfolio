@@ -44,7 +44,7 @@ if (name.length === 0 || phone.length === 0 || email.length === 0 || message.len
           <form ref={form} onSubmit={sendEmail} className="contact-form ">
             <div className={styles.emailBox}>
               <h2 className={styles.formH2}>Travaillons ensemble</h2>
-              <img src={mail} alt='email' className={styles.emailIcon} />
+              <img src={mail} alt='email' className={styles.emailIcon} width="50" heigh="50" />
             </div>
             <div className="mb-3">
               <input

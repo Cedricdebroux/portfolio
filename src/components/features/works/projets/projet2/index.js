@@ -21,7 +21,7 @@ function Projet2() {
   return (
     <div className="container">
       <Nav.Link as={NavLink} to="/works">
-        <img src={back} alt="back" className={styles.back} />
+        <img src={back} alt="back" className={styles.back} width="47" heigh="30" />
       </Nav.Link>
       <div className={styles.containerProjet1}>
         <h1 className={styles.title}>E-commerce</h1>
@@ -58,34 +58,34 @@ function Projet2() {
               }}
             >
               <SplideSlide>
-                <img className={styles.images} src={home} alt="webshop 1" />
+                <img className={styles.images} src={home} alt="webshop 1" width="480" heigh="320" />
               </SplideSlide>
               <SplideSlide>
-                <img className={styles.images} src={page1} alt="page1" />
+                <img className={styles.images} src={page1} alt="page1" width="480" heigh="320" />
               </SplideSlide>
               <SplideSlide>
-                <img className={styles.images} src={page2} alt="page2" />
+                <img className={styles.images} src={page2} alt="page2" width="480" heigh="320"/>
               </SplideSlide>
               <SplideSlide>
-                <img className={styles.images} src={page3} alt="page3" />
+                <img className={styles.images} src={page3} alt="page3" width="480" heigh="320"/>
               </SplideSlide>
               <SplideSlide>
-                <img className={styles.images} src={page4} alt="page4" />
+                <img className={styles.images} src={page4} alt="page4" width="480" heigh="320" />
               </SplideSlide>
               <SplideSlide>
-                <img className={styles.images} src={page5} alt="page5" />
+                <img className={styles.images} src={page5} alt="page5" width="480" heigh="320"/>
               </SplideSlide>
               <SplideSlide>
-                <img className={styles.images} src={page6} alt="page6" />
+                <img className={styles.images} src={page6} alt="page6" width="480" heigh="320" />
               </SplideSlide>
               <SplideSlide>
-                <img className={styles.images} src={page7} alt="page7" />
+                <img className={styles.images} src={page7} alt="page7" width="480" heigh="320"/>
               </SplideSlide>
               <SplideSlide>
-                <img className={styles.images} src={page8} alt="page8" />
+                <img className={styles.images} src={page8} alt="page8" width="480" heigh="320"/>
               </SplideSlide>
               <SplideSlide>
-                <img className={styles.images} src={page9} alt="page9" />
+                <img className={styles.images} src={page9} alt="page9" width="480" heigh="320"/>
               </SplideSlide>
             </Splide>
           </div>

@@ -17,7 +17,7 @@ function Projet3() {
   return (
    <div className="container">
      <Nav.Link as={NavLink} to="/works">
-       <img src={back} alt="back" className={styles.back}/>
+       <img src={back} alt="back" className={styles.back} width="47" heigh="30"/>
      </Nav.Link>
      <div className={ styles.containerProjet1 }>
         <h1 className={ styles.title }>Jeu en React</h1>
@@ -60,22 +60,22 @@ function Projet3() {
               } }
             >
               <SplideSlide>
-                <img className={ styles.images } src={ gameLog } alt="gamelog"/>
+                <img className={ styles.images } src={ gameLog } alt="gamelog" width="480" heigh="320"/>
               </SplideSlide>
               <SplideSlide>
-                <img className={ styles.images } src={ login } alt="login"/>
+                <img className={ styles.images } src={ login } alt="login" width="480" heigh="320"/>
               </SplideSlide>
               <SplideSlide>
-                <img className={ styles.images } src={ nameThree } alt="name three"/>
+                <img className={ styles.images } src={ nameThree } alt="name three" width="480" heigh="320"/>
               </SplideSlide>
               <SplideSlide>
-                <img className={ styles.images } src={ page1 } alt="page1"/>
+                <img className={ styles.images } src={ page1 } alt="page1" width="480" heigh="320"/>
               </SplideSlide>
               <SplideSlide>
-                <img className={ styles.images } src={ scoreboard } alt="score board"/>
+                <img className={ styles.images } src={ scoreboard } alt="score board" width="480" heigh="320"/>
               </SplideSlide>
               <SplideSlide>
-                <img className={ styles.images } src={ signup } alt="signup"/>
+                <img className={ styles.images } src={ signup } alt="signup" width="480" heigh="320"/>
               </SplideSlide>
             </Splide>
           </div>

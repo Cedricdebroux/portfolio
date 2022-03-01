@@ -33,12 +33,12 @@ class HomePage extends Component {
                     <p className={ styles.subtitle2 }>Développeur Web Full Stack</p>
                 </div>
 
-                <img src={logoReact} alt='logo react' className={styles.logoReact} />
-                <img src={logoVue} alt='logo react' className={styles.logoVue} />
-                <img src={logoSf} alt='logo react' className={styles.logoSf} />
-                <img src={logoW} alt='logo react' className={styles.logow} />
-                <img src={logoSass} alt='logo react' className={styles.logoSass} />
-                <img src={logoBootstrap} alt='logo react' className={styles.logoBootstrap} />
+                <img src={logoReact} alt='logo react' className={styles.logoReact} width="90" heigh="90" />
+                <img src={logoVue} alt='logo react' className={styles.logoVue} width="90" heigh="90" />
+                <img src={logoSf} alt='logo react' className={styles.logoSf} width="90" heigh="90" />
+                <img src={logoW} alt='logo react' className={styles.logow} width="90" heigh="90" />
+                <img src={logoSass} alt='logo react' className={styles.logoSass} width="90" heigh="90" />
+                <img src={logoBootstrap} alt='logo react' className={styles.logoBootstrap} width="90" heigh="90" />
             </div>
 
                 <div className={ styles.boxAboutMe }>
@@ -63,35 +63,35 @@ class HomePage extends Component {
                     <div className={ styles.box1Logo }>
                         <ul className={ styles.box1Ul}>
                             <li>
-                                <img src={logoReactC} alt='logo react' className={styles.logoReactC} />
+                                <img src={logoReactC} alt='logo react' className={styles.logoReactC} width="34" heigh="30" />
                                 <p>React</p>
                             </li>
                             <li>
-                                <img src={logoVueC} alt='logo vue' className={styles.logoReactC} />
+                                <img src={logoVueC} alt='logo vue' className={styles.logoReactC} width="35" heigh="30" />
                                 <p>Vue</p>
                             </li>
                             <li>
-                                <img src={logoSfC} alt='logo symfony' className={styles.logoReactC} />
+                                <img src={logoSfC} alt='logo symfony' className={styles.logoReactC} width="30" heigh="30" />
                                 <p>Symfony</p>
                             </li>
                             <li>
-                                <img src={logoWpC} alt='logo wordpress' className={styles.logoReactC} />
+                                <img src={logoWpC} alt='logo wordpress' className={styles.logoReactC} width="30" heigh="30" />
                                 <p>Wordpress</p>
                             </li>
                             <li>
-                                <img src={logoSassC} alt='logo sass' className={styles.logoReactC} />
+                                <img src={logoSassC} alt='logo sass' className={styles.logoReactC} width="40" heigh="30" />
                                 <p>Sass</p>
                             </li>
                             <li>
-                                <img src={logoBootstrapC} alt='logo bootstrap' className={styles.logoReactC} />
+                                <img src={logoBootstrapC} alt='logo bootstrap' className={styles.logoReactC} width="30" heigh="30" />
                                 <p>Bootstrap</p>
                             </li>
                             <li>
-                                <img src={logoPhpC} alt='logo php' className={styles.logoReactC} />
+                                <img src={logoPhpC} alt='logo php' className={styles.logoReactC} width="52" heigh="28" />
                                 <p>PHP</p>
                             </li>
                             <li>
-                                <img src={logoNodeJsC} alt='logo node js' className={styles.logoReactC} />
+                                <img src={logoNodeJsC} alt='logo node js' className={styles.logoReactC} width="30" heigh="33" />
                                 <p>Node JS</p>
                             </li>
                         </ul>
@@ -102,15 +102,15 @@ class HomePage extends Component {
                     <div className={ styles.box1Logo2 }>
                         <ul className={ styles.box1LearnUl}>
                             <li>
-                                <img src={logoJavaC} alt='logo java' className={styles.logoReactC} />
+                                <img src={logoJavaC} alt='logo java' className={styles.logoReactC} width="30" heigh="41" />
                                 <p>Java</p>
                             </li>
                             <li>    
-                                <img src={logoDart} alt='logo dart' className={styles.logoReactC} />
+                                <img src={logoDart} alt='logo dart' className={styles.logoReactC} width="30" heigh="30" />
                                 <p>Dart</p>
                             </li>
                             <li>
-                                <img src={logoFlutterC} alt='logo node js' className={styles.logoReactC} />
+                                <img src={logoFlutterC} alt='logo node js' className={styles.logoReactC} width="30" heigh="37,5" />
                                 <p>Flutter</p>
                             </li>
                         </ul>
