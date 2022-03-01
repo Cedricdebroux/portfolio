@@ -2,7 +2,7 @@
   background-color: #dfdede;
   padding: 30px 30px 15px 30px;
   border-radius: 20px;
-  margin-top: 30vh;
+  margin-top: 20vh;
   transform: translateY(-50%);
 }
 .formButton {
@@ -50,12 +50,27 @@
 .title {
   color: #dfdede;
   font-size: 2.5rem;
-  margin-top: 20vh;
+  margin-bottom: 25vh;
   font-family: Play;
-  text-align: center
+  text-align: center;
+  margin-top: 10vh;
 }
 @media screen and (max-width: 430px) {
   .formButton {
     width: 18rem;
   }
+}
+/* screen retina large */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1300px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) { 
+
+  .formCustom{
+    margin-top: 50vh;
+  }
+
 }

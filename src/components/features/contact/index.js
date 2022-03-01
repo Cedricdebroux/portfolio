@@ -36,6 +36,7 @@ if (name.length === 0 || phone.length === 0 || email.length === 0 || message.len
     
     return (
       <>
+      
       <h1 className={ styles.title }>
         Contactez-moi
       </h1>
@@ -108,7 +109,8 @@ if (name.length === 0 || phone.length === 0 || email.length === 0 || message.len
             <p className="send-invalid-input"></p>
           </div>
 
-        </div></>
+        </div>
+        </>
   );
 };
 export default ContactMe;

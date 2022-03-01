@@ -3,7 +3,7 @@ import styles from "./AboutMe.module.css";
 import { Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { saveAs } from "file-saver";
-import Cv from '../../images/cv/cedric_debroux.pdf';
+import Cv from '../../images/cv/cedric-debroux-cv.pdf';
 import logoDart from '../../images/competences/logoDart.png';
 import logoFlutter from '../../images/competences/logoFlutter.png';
 import logoJava from '../../images/competences/logoJava.png';
