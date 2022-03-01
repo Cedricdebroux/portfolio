@@ -1,3 +1,13 @@
+.boxImg {
+  width: 650px;
+  height: 650px;
+  position: absolute;
+  top: 8vh;
+  left: 20%;
+  animation: boxImg infinite 300s linear ;
+  overflow: hidden;
+  border-radius: 50%;
+}
 .welcomBox {
   margin-bottom: 40vh;
 }
@@ -95,42 +105,44 @@
 }
 .logow {
   width: 8%;
-  position: absolute;
-  top: 10%;
+  position: relative;
+  top: 92%;
   left: 20%;
-  animation: logo-w infinite 16s linear;
+  animation: logo-w infinite 16s linear, rotateImg infinite 300s linear;
 }
 .logoSass {
   width: 8%;
-  position: absolute;
+  position: relative;
   top: 18%;
   left: 90%;
-  animation: logo-sass infinite 12s linear;
+  animation: logo-sass infinite 12s linear, rotateImg infinite 300s linear;
 }
 .logoBootstrap {
   width: 8%;
-  position: absolute;
-  top: 30%;
-  left: 53%;
-  animation: logo-bootstrap infinite 14s linear;
+  position: relative;
+  top: 1%;
+  left: 7%;
+  animation: logo-bootstrap infinite 14s linear, rotateImg infinite 300s linear;
 }
 .logoReact {
   width: 8%;
+  position: relative;
+  top: 50%;
   animation: logo-fade-in-out-react infinite 10s linear;
 }
 .logoVue {
   width: 8%;
-  position: absolute;
-  left: 60%;
-  top: 5%;
-  animation: logo-scale-vue infinite 23s linear;
+  position: relative;
+  left: 82%;
+  top: 50%;
+  animation: logo-scale-vue infinite 23s linear, rotateImg infinite 300s linear;
 }
 .logoSf {
   width: 8%;
-  position: absolute;
-  left: 90%;
+  position: relative;
+  left: 70%;
   top: 25%;
-  animation: logo-sf infinite 18s linear;
+  animation: logo-sf infinite 18s linear, rotateImg infinite 300s linear;
 }
 .box1Title1 {
   font-size: 2.8rem;
@@ -307,6 +319,45 @@
     margin-bottom: 60px;
     width: 160px;
   }
+  .boxImg {
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    top: 24vh;
+    left: 5%;
+    animation: boxImg infinite 300s linear;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1000px) and (max-width: 1024px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1000px) and (max-width: 1024px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1000px) and (max-width: 1024px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1000px) and (max-width: 1024px),
+only screen and (                min-resolution: 192dpi) and (min-width: 1000px) and (max-width: 1024px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 1000px) and (max-width: 1024px) { 
+
+  .boxImg {
+    top: 17vh;
+    left: 20%;
+  }
+
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 810px) and (max-width: 999px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 810px) and (max-width: 999px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 810px) and (max-width: 999px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 810px) and (max-width: 999px),
+only screen and (                min-resolution: 192dpi) and (min-width: 810px) and (max-width: 999px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 810px) and (max-width: 999px) { 
+
+  .boxImg {
+    top: 17vh;
+    left: 2%;
+  }
+
 }
 
 /* Animations */
@@ -415,5 +466,21 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes boxImg {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateImg {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
   }
 }

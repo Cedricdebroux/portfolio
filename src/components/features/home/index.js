@@ -32,13 +32,14 @@ class HomePage extends Component {
                     <p className={ styles.subtitle }>Votre futur</p>
                     <p className={ styles.subtitle2 }>Développeur Web Full Stack</p>
                 </div>
-
-                <img src={logoReact} alt='logo react' className={styles.logoReact} width="90" heigh="90" />
-                <img src={logoVue} alt='logo react' className={styles.logoVue} width="90" heigh="90" />
-                <img src={logoSf} alt='logo react' className={styles.logoSf} width="90" heigh="90" />
-                <img src={logoW} alt='logo react' className={styles.logow} width="90" heigh="90" />
-                <img src={logoSass} alt='logo react' className={styles.logoSass} width="90" heigh="90" />
-                <img src={logoBootstrap} alt='logo react' className={styles.logoBootstrap} width="90" heigh="90" />
+                <div className={styles.boxImg}>
+                    <img src={logoReact} alt='logo react' className={styles.logoReact} width="90" heigh="90" />
+                    <img src={logoVue} alt='logo react' className={styles.logoVue} width="90" heigh="90" />
+                    <img src={logoSf} alt='logo react' className={styles.logoSf} width="90" heigh="90" />
+                    <img src={logoW} alt='logo react' className={styles.logow} width="90" heigh="90" />
+                    <img src={logoSass} alt='logo react' className={styles.logoSass} width="90" heigh="90" />
+                    <img src={logoBootstrap} alt='logo react' className={styles.logoBootstrap} width="90" heigh="90" />
+                </div>
             </div>
 
                 <div className={ styles.boxAboutMe }>
