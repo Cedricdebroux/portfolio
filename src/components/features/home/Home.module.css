@@ -2,14 +2,15 @@
   width: 650px;
   height: 650px;
   position: absolute;
-  top: 15vh;
+  top: 60px;
   left: 20%;
   animation: boxImg infinite 300s linear ;
   overflow: hidden;
   border-radius: 50%;
+  
 }
 .welcomBox {
-  margin-bottom: 20vh;
+  margin-bottom: 190px;
 }
 .box {
   display: block;
@@ -112,28 +113,29 @@
 .logow {
   width: 8%;
   position: relative;
-  top: 92%;
-  left: 20%;
+  top: 595px;
+  left: 130px;
   animation: logo-w infinite 16s linear, rotateImg infinite 300s linear;
 }
 .logoSass {
   width: 8%;
   position: relative;
-  top: 18%;
-  left: 90%;
+  top: 70px;
+  right: 100px;
   animation: logo-sass infinite 12s linear, rotateImg infinite 300s linear;
 }
 .logoBootstrap {
   width: 8%;
   position: relative;
-  top: 1%;
-  left: 7%;
+  top: 8px;
+  left: 50px;
   animation: logo-bootstrap infinite 14s linear, rotateImg infinite 300s linear;
 }
 .logoReact {
   width: 8%;
   position: relative;
-  top: 50%;
+  top: 520px;
+  left: 100px;
   animation: logo-fade-in-out-react infinite 10s linear;
 }
 .logoVue {
@@ -141,7 +143,7 @@
   position: relative;
   left: 82%;
   top: 50%;
-  animation: logo-scale-vue infinite 23s linear, rotateImg infinite 300s linear;
+  animation: rotateImg infinite 300s linear ,logo-scale-vue infinite 23s linear;
 }
 .logoSf {
   width: 8%;
@@ -162,8 +164,8 @@
   background-color: #dfdede;
   padding: 20px 20px 20px 20px;
   border-radius: 20px;
-  margin-top: 15vh;
-  margin-bottom: 5vh;
+  margin-top: 100px;
+  margin-bottom: 50px;
   transform: translateY(-50%);
 }
 .box2Title {
@@ -272,7 +274,7 @@
   .box2 {
     display: flex;
     justify-content: center;
-    margin-bottom: 10vh;
+    margin-bottom: 100px;
   }
   .titleAboutMe {
     font-size: 1.4rem;
@@ -329,11 +331,21 @@
     width: 340px;
     height: 340px;
     position: absolute;
-    top: 24vh;
+    top: 150px;
     left: 6%;
     animation: boxImg infinite 300s linear;
     overflow: hidden;
     border-radius: 50%;
+  }
+  .welcomBox {
+    margin-bottom: 200px;
+  }
+  .logoReact {
+    top: 310px;
+    left: 130px;
+  }
+  .logoSass {
+    top: 105px;
   }
 }
 
@@ -379,10 +391,8 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 1300px)
    left: 25%;
    top:8vh;
  }
- .welcomBox {
-    margin-top: 30vh;
- }
 
+ 
 }
 
 /* Animations */
@@ -405,15 +415,6 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 1300px)
   }
 }
 @keyframes logo-scale-vue {
-  0% {
-    transform: scale(0.5);
-  }
-  50% {
-    transform: scale(1);
-  }
-  0% {
-    transform: scale(0.5);
-  }
   0% {
     opacity: 0;
   }
