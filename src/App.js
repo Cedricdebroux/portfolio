@@ -19,6 +19,7 @@ import logoCed from './components/images/logoCed.png';
 
 
 
+
 const particlesInit = (main) => {
   
   
@@ -54,227 +55,227 @@ class App extends Component {
   }
  render() {
   return (
-      <Router>
-        <ScrollToTop>
-      { this.state.loaded ? (
-        <>
-        <div className="mb-5">
+    <Router>
+    <ScrollToTop>
+  { this.state.loaded ? (
+    <>
+    <div className="mb-5">
 
-        <Navbar fixed="top" variant="dark" expand="md" className='navBarBg'>
-        <Container fluid>
-        <Navbar.Brand className='logo-accueil' href="/">
-          <img src={logoCed} alt="logo" className='logo-ced' />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-        <Nav
-        className="ml-auto my-2 my-lg-0"
-        style={{ maxHeight: '180px' }}
-        navbarScroll
-        >
-        {routes.map(route => (
-          <Nav.Link
-          key={route.path}
-          as={NavLink}
-          to={route.path}
-          activeClassName="active"
-          exact
-          >
-                {route.name}
-          </Nav.Link>
-            ))}
-            </Nav>
-            </Navbar.Collapse>
-            </Container>
-        </Navbar>
-        </div>
-            <Container className="container">
-            {routes.map(({ path, Component }) => (
-              <Route key={path} exact path={path}>
-                {({ match }) => (
-                  <CSSTransition
-                    in={match != null}
-                    timeout={300}
-                    classNames="page"
-                    unmountOnExit
-                  >
-                    <div className="page">
-                      <Component />
-                    </div>
-                  </CSSTransition>
-                )}
-                
-              </Route>
-            ))}
-            <Redirect to="/home" />
-          </Container>
-          <Particles
-          id="tsparticles"
-          init={particlesInit}
-          loaded={particlesLoaded}
-          options={{
-            background: {
-              color: {
-                value: "#0d0a28",
-              },
-            },
-            fullScreen: {
+    <Navbar fixed="top" variant="dark" expand="md" className='navBarBg'>
+    <Container fluid>
+    <Navbar.Brand className='logo-accueil' href="/">
+      <img src={logoCed} alt="logo" className='logo-ced' />
+    </Navbar.Brand>
+    <Navbar.Toggle aria-controls="navbarScroll" />
+    <Navbar.Collapse id="navbarScroll">
+    <Nav
+    className="ml-auto my-2 my-lg-0"
+    style={{ maxHeight: '180px' }}
+    navbarScroll
+    >
+    {routes.map(route => (
+      <Nav.Link
+      key={route.path}
+      as={NavLink}
+      to={route.path}
+      activeClassName="active"
+      exact
+      >
+            {route.name}
+      </Nav.Link>
+        ))}
+        </Nav>
+        </Navbar.Collapse>
+        </Container>
+    </Navbar>
+    </div>
+        <Container className="container">
+        {routes.map(({ path, Component }) => (
+          <Route key={path} exact path={path}>
+            {({ match }) => (
+              <CSSTransition
+                in={match != null}
+                timeout={300}
+                classNames="page"
+                unmountOnExit
+              >
+                <div className="page">
+                  <Component />
+                </div>
+              </CSSTransition>
+            )}
+            
+          </Route>
+        ))}
+        <Redirect to="/home" />
+      </Container>
+      <Particles
+      id="tsparticles"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={{
+        background: {
+          color: {
+            value: "#0d0a28",
+          },
+        },
+        fullScreen: {
+          enable: true,
+          zIndex: -1
+        },
+        fpsLimit: 120,
+        interactivity: {
+          events: {
+            onClick: {
               enable: true,
-              zIndex: -1
+              mode: "push",
             },
-            fpsLimit: 120,
-            interactivity: {
-              events: {
-                onClick: {
-                  enable: true,
-                  mode: "push",
-                },
-                onHover: {
-                  enable: true,
-                  mode: "attract",
-                },
-                resize: true,
-              },
-              modes: {
-                bubble: {
-                  distance: 400,
-                  duration: 2,
-                  opacity: 0.8,
-                  size: 40,
-                },
-                push: {
-                  quantity: 4,
-                },
-                repulse: {
-                  distance: 200,
-                  duration: 0.4,
-                },
-              },
+            onHover: {
+              enable: true,
+              mode: "attract",
             },
-            particles: {
-              color: {
-                value: "#12606a",
-              },
-              links: {
-                color: "#12606a",
-                distance: 150,
-                enable: true,
-                opacity: 0.5,
-                width: 1,
-              },
-              collisions: {
-                enable: true,
-              },
-              move: {
-                direction: "none",
-                enable: true,
-                outMode: "bounce",
-                random: true,
-                speed: 1,
-                straight: true,
-              },
-              gravity: {
-                acceleration: 0,
-                enable: true,
-                maxSpeed: 1,
-              },
-              number: {
-                density: {
-                  enable: true,
-                  area: 4000,
-                },
-                value: 120,
-              },
-              opacity: {
-                value: 0.5,
-              },
-              shape: {
-                type: "circle",
-              },
-              size: {
-                random: true,
-                value: 5,
-              },
+            resize: true,
+          },
+          modes: {
+            bubble: {
+              distance: 400,
+              duration: 2,
+              opacity: 0.8,
+              size: 40,
             },
-            detectRetina: true,
-          }}
-          />
-        
-          <Route path="/works/movies" component={Projet1}>
-          {({ match }) => (
-                  <CSSTransition
-                    in={match != null}
-                    timeout={300}
-                    classNames="page"
-                    unmountOnExit
-                  >
-                    <div className="page">
-                      <Projet1 />
-                    </div>
-                  </CSSTransition>
-                )}
-          </Route>
-          <Route path="/works/ecommerce" component={Projet2}>
-          {({ match }) => (
-                  <CSSTransition
-                    in={match != null}
-                    timeout={300}
-                    classNames="page"
-                    unmountOnExit
-                  >
-                    <div className="page">
-                      <Projet2 />
-                    </div>
-                  </CSSTransition>
-                )}
-          </Route>
-          <Route path="/works/game" component={Projet3}>
-          {({ match }) => (
-                  <CSSTransition
-                    in={match != null}
-                    timeout={300}
-                    classNames="page"
-                    unmountOnExit
-                  >
-                    <div className="page">
-                      <Projet3 />
-                    </div>
-                  </CSSTransition>
-                )}
-          </Route>
-          <Route path="/works/restaurant" component={Projet4}>
-          {({ match }) => (
-                  <CSSTransition
-                    in={match != null}
-                    timeout={300}
-                    classNames="page"
-                    unmountOnExit
-                  >
-                    <div className="page">
-                      <Projet4 />
-                    </div>
-                  </CSSTransition>
-                )}
-          </Route>
-          <Route path="/works/forum" component={Projet5}>
-          {({ match }) => (
-                  <CSSTransition
-                    in={match != null}
-                    timeout={300}
-                    classNames="page"
-                    unmountOnExit
-                  >
-                    <div className="page">
-                      <Projet5 />
-                    </div>
-                  </CSSTransition>
-                )}
-          </Route>
-          </>
-          ) :(
-          <Loading />) }
-          </ScrollToTop>
-          </Router>
+            push: {
+              quantity: 4,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+          },
+        },
+        particles: {
+          color: {
+            value: "#12606a",
+          },
+          links: {
+            color: "#12606a",
+            distance: 150,
+            enable: true,
+            opacity: 0.5,
+            width: 1,
+          },
+          collisions: {
+            enable: true,
+          },
+          move: {
+            direction: "none",
+            enable: true,
+            outMode: "bounce",
+            random: true,
+            speed: 1,
+            straight: true,
+          },
+          gravity: {
+            acceleration: 0,
+            enable: true,
+            maxSpeed: 1,
+          },
+          number: {
+            density: {
+              enable: true,
+              area: 4000,
+            },
+            value: 120,
+          },
+          opacity: {
+            value: 0.5,
+          },
+          shape: {
+            type: "circle",
+          },
+          size: {
+            random: true,
+            value: 5,
+          },
+        },
+        detectRetina: true,
+      }}
+      />
+    
+      <Route path="/works/job1" component={Projet1}>
+      {({ match }) => (
+              <CSSTransition
+                in={match != null}
+                timeout={300}
+                classNames="page"
+                unmountOnExit
+              >
+                <div className="page">
+                  <Projet1 />
+                </div>
+              </CSSTransition>
+            )}
+      </Route>
+      <Route path="/works/job2" component={Projet2}>
+      {({ match }) => (
+              <CSSTransition
+                in={match != null}
+                timeout={300}
+                classNames="page"
+                unmountOnExit
+              >
+                <div className="page">
+                  <Projet2 />
+                </div>
+              </CSSTransition>
+            )}
+      </Route>
+      <Route path="/works/job3" component={Projet3}>
+      {({ match }) => (
+              <CSSTransition
+                in={match != null}
+                timeout={300}
+                classNames="page"
+                unmountOnExit
+              >
+                <div className="page">
+                  <Projet3 />
+                </div>
+              </CSSTransition>
+            )}
+      </Route>
+      <Route path="/works/job4" component={Projet4}>
+      {({ match }) => (
+              <CSSTransition
+                in={match != null}
+                timeout={300}
+                classNames="page"
+                unmountOnExit
+              >
+                <div className="page">
+                  <Projet4 />
+                </div>
+              </CSSTransition>
+            )}
+      </Route>
+      <Route path="/works/job5" component={Projet5}>
+      {({ match }) => (
+              <CSSTransition
+                in={match != null}
+                timeout={300}
+                classNames="page"
+                unmountOnExit
+              >
+                <div className="page">
+                  <Projet5 />
+                </div>
+              </CSSTransition>
+            )}
+      </Route>
+      </>
+      ) :(
+      <Loading />) }
+      </ScrollToTop>
+      </Router>
  
           )
         }
