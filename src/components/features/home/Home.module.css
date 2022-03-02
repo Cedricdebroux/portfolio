@@ -18,6 +18,12 @@
   margin-top: 40vh;
   transform: translateY(-50%);
 }
+.box p {
+  z-index: 1;
+}
+.box img {
+  z-index: 0;
+}
 .title {
   font-size: 2.8rem;
   text-align: center;
