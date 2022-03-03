@@ -201,7 +201,7 @@ class App extends Component {
       }}
       />
     
-      <Route path="/works/job1" component={Projet1}>
+      <Route path="/works/movies" component={Projet1}>
       {({ match }) => (
               <CSSTransition
                 in={match != null}
@@ -215,7 +215,7 @@ class App extends Component {
               </CSSTransition>
             )}
       </Route>
-      <Route path="/works/job2" component={Projet2}>
+      <Route path="/works/ecommerce" component={Projet2}>
       {({ match }) => (
               <CSSTransition
                 in={match != null}
@@ -229,7 +229,7 @@ class App extends Component {
               </CSSTransition>
             )}
       </Route>
-      <Route path="/works/job3" component={Projet3}>
+      <Route path="/works/game" component={Projet3}>
       {({ match }) => (
               <CSSTransition
                 in={match != null}
@@ -243,7 +243,7 @@ class App extends Component {
               </CSSTransition>
             )}
       </Route>
-      <Route path="/works/job4" component={Projet4}>
+      <Route path="/works/restaurant" component={Projet4}>
       {({ match }) => (
               <CSSTransition
                 in={match != null}
@@ -257,7 +257,7 @@ class App extends Component {
               </CSSTransition>
             )}
       </Route>
-      <Route path="/works/job5" component={Projet5}>
+      <Route path="/works/forum" component={Projet5}>
       {({ match }) => (
               <CSSTransition
                 in={match != null}

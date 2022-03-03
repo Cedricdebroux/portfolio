@@ -6,7 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import Footer from './components/features/footer/footer';
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+ 
+<App />
+
+,
+document.getElementById('root'));
+
 ReactDOM.render(
   
   <Footer />
