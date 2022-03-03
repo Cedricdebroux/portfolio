@@ -6,7 +6,6 @@ To get there click here [Cédric Debroux](https://cedric-debroux.be)
 
  - General info.
  - Technologies.
- - Site map.
  - Setup.
 
 ## General info
@@ -15,7 +14,7 @@ This project is a description of my personality and an overview of my projects a
 
 ## Technologies
 
-Project is created with:
+#### Project is created with:
 
 - [ReactJS](https://fr.reactjs.org/) 17.0.2.
 
@@ -33,6 +32,14 @@ Project is created with:
 
 - [Bootstrap](https://getbootstrap.com/) 5.0.2.
 
-## Site map
+## Setup
+
+> git clone https://github.com/Cedricdebroux/portfolio.git
+>
+> cd portfolio
+>
+> npm install
+> 
+> npm start
 
 
