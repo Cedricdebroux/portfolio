@@ -287,15 +287,45 @@
 /* Media for Phone */
 
 @media screen and (max-width: 430px) {
+
+  /* ---------------- First box in home page with title name and subtitle ---------------- */
+
   .title {
     font-size: 1.8rem;
   }
   .subtitle {
     font-size: 1.5rem;
   }
+
   .subtitle2 {
     font-size: 1.5rem;
   }
+  .boxImg {
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    top: 150px;
+    left: 6%;
+    animation: boxImg infinite 300s linear;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .welcomBox {
+    margin-bottom: 200px;
+  }
+  .logoReact {
+    top: 310px;
+    left: 130px;
+  }
+  .logoSass {
+    top: 105px;
+  }
+  .box {
+    margin-top: 315px;
+  }
+
+  /* ------------------------------------ End of first box ------------------------------------ */
+  
   .box2Title {
     font-size: 1.4rem;
     margin-bottom: 10px;
@@ -309,6 +339,9 @@
     justify-content: center;
     margin-bottom: 100px;
   }
+
+
+  /* ------------------------------------ Box about me ------------------------------------ */
   .titleAboutMe {
     font-size: 1.4rem;
     color: #dfdede;
@@ -331,11 +364,15 @@
     padding: 5px;
     box-shadow: 0;
   }
+
   .navLinkMe {
     color: #0d0a28;
     font-size: 1.5rem;
     text-decoration: none;
   }
+  /* -----------------------------------End box about me ----------------------------------- */
+  
+  /* ------------------------------------ Box competences ------------------------------------- */
   .box1 {
     text-align: center
   }
@@ -346,6 +383,11 @@
     margin-bottom: 60px;
     width: 160px;
   }
+
+  /* ------------------------------------ End Box competences ------------------------------------- */
+
+  /* ------------------------------------  Box learn ------------------------------------- */
+
   .box1Learn {
     justify-content: center;
     margin-bottom: 30px;
@@ -360,26 +402,11 @@
     margin-bottom: 60px;
     width: 160px;
   }
-  .boxImg {
-    width: 340px;
-    height: 340px;
-    position: absolute;
-    top: 150px;
-    left: 6%;
-    animation: boxImg infinite 300s linear;
-    overflow: hidden;
-    border-radius: 50%;
-  }
-  .welcomBox {
-    margin-bottom: 200px;
-  }
-  .logoReact {
-    top: 310px;
-    left: 130px;
-  }
-  .logoSass {
-    top: 105px;
-  }
+
+  /* ------------------------------------ End Box learn ------------------------------------- */
+
+
+  
 }
 
 /* Media for ipad */
@@ -439,7 +466,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 1300px)
  
 }
 
-/* Animations */
+/* ------------------------------ Animations ------------------------------ */
 
 @keyframes logo-fade-in-out-react {
   0% {
