@@ -32,6 +32,8 @@ This project is a description of my personality and an overview of my projects a
 
 - [Bootstrap](https://getbootstrap.com/) 5.0.2.
 
+- [Canvas](www.canvas.com) For the "gif loading".
+
 ## Setup
 
 > git clone https://github.com/Cedricdebroux/portfolio.git
