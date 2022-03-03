@@ -15,6 +15,8 @@ This project is a description of my personality and an overview of my projects a
 
 ## Technologies
 
+Project is created with:
+
 - [ReactJS](https://fr.reactjs.org/) 17.0.2.
 
 - [ParticuleJS](https://particles.js.org/) 1.41.0.
