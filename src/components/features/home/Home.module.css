@@ -140,62 +140,6 @@
 
 /* ------------------------------------ Box competences ------------------------------------- */
 
-
-
-/* ---------------------------------- End box competences ----------------------------------- */
-
-.formButton {
-  background-color: #0d0a28;
-  border-color: #0d0a28;
-  width: 13rem;
-  font-size: 1.4rem;
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0;
-}
-.formButton:hover {
-  background-color: #12606a;
-  border-color: #12606a;
-}
-
-.navLink {
-  color: #dfdede;
-  text-decoration: none;
-}
-.navLink:hover {
-  color: #dfdede;
-  text-decoration: none;
-}
-
-.boxAboutMe p {
-  margin-bottom: 0px;
-}
-
-.box1Title1 {
-  font-size: 2.8rem;
-  font-family: Play;
-}
-.box2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #dfdede;
-  padding: 20px 20px 20px 20px;
-  border-radius: 20px;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  transform: translateY(-50%);
-}
-.box2Title {
-  font-size: 2rem;
-  font-family: play;
-  color: #0d0a28;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
 .box1 {
   margin-top: 25vh;
   margin-bottom: 5vh;
@@ -237,6 +181,18 @@
   margin-bottom: 0;
   margin-left: 15px;
 }
+.box1Title1 {
+  font-size: 2.8rem;
+  font-family: Play;
+}
+.box1Logo {
+  width: 545px;
+}
+
+/* ---------------------------------- End box competences ----------------------------------- */
+
+/* --------------------------------------- Box learn ---------------------------------------- */
+
 .box1Learn p {
   font-size: 1.4rem;
   color: #dfdede;
@@ -248,9 +204,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.box1Logo {
-  width: 545px;
-}
+
 .box1Logo2 {
   width: 545px;
 }
@@ -270,6 +224,65 @@
   margin-bottom: 0;
   margin-left: 15px;
 }
+
+/* ------------------------------------- End box learn -------------------------------------- */
+
+/* ------------------------------------ Box contact me -------------------------------------- */
+
+.formButton {
+  background-color: #0d0a28;
+  border-color: #0d0a28;
+  width: 13rem;
+  font-size: 1.4rem;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0;
+}
+.formButton:hover {
+  background-color: #12606a;
+  border-color: #12606a;
+}
+
+.navLink {
+  color: #dfdede;
+  text-decoration: none;
+}
+.navLink:hover {
+  color: #dfdede;
+  text-decoration: none;
+}
+
+.boxAboutMe p {
+  margin-bottom: 0px;
+}
+
+
+.box2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dfdede;
+  padding: 20px 20px 20px 20px;
+  border-radius: 20px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  transform: translateY(-50%);
+}
+.box2Title {
+  font-size: 2rem;
+  font-family: play;
+  color: #0d0a28;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* ---------------------------------- End Box contact me ------------------------------------ */
+
+
+
+
 
 /* Media for Phone */
 
