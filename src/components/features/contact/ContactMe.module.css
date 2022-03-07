@@ -14,11 +14,13 @@
   border-radius: 10px;
   padding: 10px;
   margin-top: 20px;
-  box-shadow: 0
+  box-shadow: 0;
+  transition: all 0.3s ease-in-out;
 }
 .formButton:hover {
   background-color: #12606a;
   border-color: #12606a;
+  transform: scale(1.1);
 }
 .formH2 {
   color: #0d0a28;
@@ -55,11 +57,29 @@
   text-align: center;
   margin-top: 10vh;
 }
+
+/* ---------------------------- Media big Phone ---------------------------- */
+
 @media screen and (max-width: 430px) {
+  
   .formButton {
     width: 18rem;
+    transition: all 0.1s ease-in-out;
+  }
+  .formButton:hover {
+    background-color: #0d0a28;
+    border-color: #0d0a28;
+    transform: scale(0.9);
+  }
+  .formButton:active {
+    background-color: #0d0a28;
+    border-color: #0d0a28;
+    transform: scale(0.9);
   }
 }
+
+/* -------------------------- End media big Phone -------------------------- */
+
 /* screen retina large */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
