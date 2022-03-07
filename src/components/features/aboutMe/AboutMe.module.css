@@ -36,7 +36,7 @@
   .formButton:hover {
     background-color: #12606a;
     border-color: #12606a;
-    transform: scale(1.1); 
+    transform: scale(1.04); 
   }
   .formButtonDown {
     background-color: #dfdede;
@@ -52,7 +52,7 @@
   .formButtonDown:hover {
     background-color: #12606a;
     border-color: #12606a;
-    transform: scale(1.1);
+    transform: scale(1.04);
   }
   .navLink {
     color: #0d0a28;

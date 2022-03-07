@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from'./ContactMe.module.css';
 import mail from './email.png';
+import { disable } from 'workbox-navigation-preload';
 
 const ContactMe = () => {
   const form = useRef();
@@ -55,7 +56,7 @@ if (name.length === 0 || phone.length === 0 || email.length === 0 || message.len
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Nom *"
                 value={name}
-                autoComplete="off" />
+                autoComplete="on" />
             </div>
             <div className="mb-3">
               <input
