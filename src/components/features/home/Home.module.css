@@ -24,8 +24,8 @@
 .box p {
   z-index: 1;
 }
-.box img {
-  z-index: 0;
+.boxImg img {
+  z-index: -1;
 }
 
 .title {
@@ -123,12 +123,22 @@
   border-radius: 10px;
   padding: 5px;
   box-shadow: 0;
+  transition: all 0.3s ease-in-out;
+}
+.buttonAboutMe:hover {
+  background-color: #12606a;
+  border-color: #12606a;
+  transform: scale(1.04);
+}
+.buttonAboutMe .navLinkMe:hover {
+  color: #dfdede;
 }
 
 .navLinkMe {
   color: #0d0a28;
   font-size: 1.4rem;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 .navLinkMe:hover {
   color: #0d0a28;
@@ -238,10 +248,12 @@
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0;
+  transition: all 0.3s ease-in-out;
 }
 .formButton:hover {
   background-color: #12606a;
   border-color: #12606a;
+  transform: scale(1.04); 
 }
 
 .navLink {
@@ -363,13 +375,26 @@
     border-radius: 10px;
     padding: 5px;
     box-shadow: 0;
+    transition: all 0.1s ease-in-out;
   }
-
-  .navLinkMe {
+  .buttonAboutMe:hover {
+    background-color: #dfdede;
+    border-color: #dfdede;
+    transform: scale(0.9); 
+  }
+  .buttonAboutMe:active {
+    transform: scale(0.9);
+  }
+  .buttonAboutMe .navLinkMe:hover {
     color: #0d0a28;
-    font-size: 1.5rem;
+  }
+  .buttonAboutMe .navLinkMe:active {
+    color: #0d0a28;
+    transform: scale(0.9);
     text-decoration: none;
   }
+
+
   /* -----------------------------------End box about me ----------------------------------- */
   
   /* ------------------------------------ Box competences ------------------------------------- */
@@ -405,8 +430,21 @@
 
   /* ------------------------------------ End Box learn ------------------------------------- */
 
+  /* -------------------------------------- Contact Me -------------------------------------- */
 
-  
+  .formButton {
+    transition: all 0.1s ease-in-out;
+  }
+  .formButton:hover {
+    background-color: #0d0a28;
+    border-color: #0d0a28;
+    transform: scale(0.9);  
+  }
+  .formButton:active {
+    background-color: #0d0a28;
+    border-color: #0d0a28;
+    transform: scale(0.9);  
+  }
 }
 
 /* Media for ipad */
@@ -461,6 +499,12 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 1300px)
  }
  .box {
    margin-top: 325px;
+ }
+ .logoReact {
+   top: 460px;
+ }
+ .logow {
+   top: 513px;
  }
 
  
