@@ -76,3 +76,34 @@
   .logoH3 {
     margin-top:15px;
   }
+
+  /* Media for Phone */
+
+@media screen and (max-width: 430px) {
+  .formButton {
+    transition: all 0.1s ease-in-out;
+  }
+  .formButton:hover {
+    background-color: #dfdede;
+    border-color: #dfdede;
+    transform: scale(0.9); 
+  }
+  .formButton:active {
+    background-color: #dfdede;
+    border-color: #dfdede;
+    transform: scale(0.9); 
+  }
+  .formButtonDown {
+    transition: all 0.1s ease-in-out;
+  }
+  .formButtonDown:hover {
+    background-color: #dfdede;
+    border-color: #dfdede;
+    transform: scale(0.9); 
+  }
+  .formButton:active {
+    background-color: #dfdede;
+    border-color: #dfdede;
+    transform: scale(0.9); 
+  }
+}
