@@ -28,7 +28,7 @@ class HomePage extends Component {
             <>
             <div className={styles.welcomBox}>
                 <div className={ styles.box }>
-                    <p className={ styles.title }>Cédric Debroux</p>
+                    <h1 className={ styles.title }>Cédric Debroux</h1>
                     <p className={ styles.subtitle }>Votre futur</p>
                     <p className={ styles.subtitle2 }>Développeur Web Full Stack</p>
                 </div>
