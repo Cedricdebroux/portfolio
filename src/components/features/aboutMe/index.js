@@ -49,9 +49,11 @@ export default function AboutMe () {
           <p className={ styles.text }>
             Je serai ravi de vous rencontrer pour vous en dire plus.
           </p>
+          <Nav.Link as={NavLink} className={ styles.navLink } to="/contact">
           <button className={ styles.formButton}>
-              <Nav.Link as={NavLink} className={ styles.navLink } to="/contact">Contactez-moi</Nav.Link>
+              Contactez-moi
           </button>
+          </Nav.Link>
 
           <h2 className={ styles.titleH }>
             À l'horizon

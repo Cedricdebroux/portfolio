@@ -47,9 +47,11 @@ class HomePage extends Component {
                         <p className={ styles.titleAboutMe }>« Choisis un travail que tu aimes, et tu n’auras pas à travailler un seul jour dans ta vie ».</p>
                         <a href="https://fr.wikipedia.org/wiki/Confucius" target="blank" className={ styles.textCitationLink }><p className={ styles.textCitation }>- CONFUCIUS -</p></a>
                     </div>
+                    <Nav.Link as={NavLink} className={ styles.navLinkMe } to="/about">
                     <button className={ styles.buttonAboutMe }>
-                        <Nav.Link as={NavLink} className={ styles.navLinkMe } to="/about">À propos de moi</Nav.Link>
+                        À propos de moi
                     </button>
+                    </Nav.Link>
                 </div>
 
                 <div className={ styles.box1 }>
@@ -57,9 +59,11 @@ class HomePage extends Component {
                         <h2 className={ styles.box1Title1 }>Compétences</h2>
                         <p className={ styles.box1Texte1 }>Animé d'une curiosité intellectuelle, j'aime me tenir informé des dernières nouveautés.</p>
                         <p className={ styles.box1Texte2 }>Voici un aperçu des technologies que j'utilise actuellement.</p>
+                        <Nav.Link as={NavLink} className={ styles.navLinkMe } to="/works">
                         <button className={ styles.buttonAboutMe}>
-                        <Nav.Link as={NavLink} className={ styles.navLinkMe } to="/works">Réalisations</Nav.Link>
+                        Réalisations
                         </button>
+                        </Nav.Link>
                     </div>
                     <div className={ styles.box1Logo }>
                         <ul className={ styles.box1Ul}>
@@ -122,9 +126,11 @@ class HomePage extends Component {
                     <div className={ styles.boxTitle }>
                     <p className={ styles.box2Title }>Vous voulez en savoir plus ?</p>
                     </div>
+                    <Nav.Link as={NavLink} className={ styles.navLink } to="/contact">
                     <button className={ styles.formButton}>
-                        <Nav.Link as={NavLink} className={ styles.navLink } to="/contact">Contactez-moi</Nav.Link>
+                        Contactez-moi
                     </button>
+                    </Nav.Link>
                 </div>
                 
             </>

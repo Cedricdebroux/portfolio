@@ -139,6 +139,7 @@
   font-size: 1.4rem;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  padding: 0;
 }
 .navLinkMe:hover {
   color: #0d0a28;
