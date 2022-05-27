@@ -81,18 +81,11 @@ class App extends Component {
                         style={{ maxHeight: '180px' }}
                         navbarScroll
                       >
-                        {routes.map(route => (
-                          <Nav.Link
-                            key={route.path}
-                            as={NavLink}
-                            to={route.path}
-                            activeClassName="active"
-                            exact
-                          >
-                            {route.name}
-
-                          </Nav.Link>
-                        ))}
+                        <NavLink to='/home' className="nav-link" activeClassName="active">{this.props.t('navBar.home')}</NavLink>
+                        <NavLink to='/about' className="nav-link" activeClassName="active">{this.props.t('navBar.about')}</NavLink>
+                        <NavLink to='/works' className="nav-link" activeClassName="active">{this.props.t('navBar.works')}</NavLink>
+                        <NavLink to='/contact' className="nav-link" activeClassName="active">{this.props.t('navBar.contact')}</NavLink>
+                        
                         <div>
                           {Object.keys(lngs).map((lng) => (
                             <button key={lng} style={{ fontWeight: this.props.i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>

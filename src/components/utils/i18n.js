@@ -19,6 +19,12 @@ i18n
         resources: {
             fr: {
                 translation: {
+                    navBar: {
+                        home: 'Accueil',
+                        about: 'A propos',
+                        works: 'Réalisations',
+                        contact: 'Contact',
+                    },
                     home: {
                         subTitle:'Votre futur',
                         subTitle2:'Développeur Web Full Stack',
@@ -40,6 +46,12 @@ i18n
             },
             en: {
                 translation: {
+                    navBar: {
+                        home: 'Home',
+                        about: 'About me',
+                        works: 'Achievements',
+                        contact: 'Contact me'
+                    },
                     home: {
                         subTitle:'Your future',
                         subTitle2:'Web developer Full Stack',
