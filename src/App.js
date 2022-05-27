@@ -31,8 +31,8 @@ const particlesLoaded = (container) => {
 };
 
 const lngs = {
-  fr: { nativeName: 'Français' },
-  en: { nativeName: 'English' }
+  fr: { nativeName: 'Fr' },
+  en: { nativeName: 'En' }
 };
 const routes = [
   { path: '/home', name: 'Accueil', Component: HomePage },
@@ -85,7 +85,7 @@ class App extends Component {
                         <NavLink to='/about' className="nav-link" activeClassName="active">{this.props.t('navBar.about')}</NavLink>
                         <NavLink to='/works' className="nav-link" activeClassName="active">{this.props.t('navBar.works')}</NavLink>
                         <NavLink to='/contact' className="nav-link" activeClassName="active">{this.props.t('navBar.contact')}</NavLink>
-                        
+
                         <div>
                           {Object.keys(lngs).map((lng) => (
                             <button key={lng} style={{ fontWeight: this.props.i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>

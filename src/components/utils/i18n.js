@@ -61,10 +61,6 @@ i18n
                     footer:{
                         footerText:'© 2022-Tous droits reservés'
                     },
-                    description: {
-                        part1: 'coucou',
-                        part2: 'Apprendre React'// here we will place our translations...
-                    }
                 }
             },
             en: {
@@ -111,10 +107,6 @@ i18n
                     footer:{
                         footerText:'© 2022-All rights reserved'
                     },
-                    description: {
-                        part1: 'Edit <1>src/App.js</1> and save to reload.',
-                        part2: 'Learn React'// here we will place our translations...
-                    }
                 }
             }
         }
