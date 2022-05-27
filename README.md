@@ -34,6 +34,8 @@ This project is a description of my personality and an overview of my projects a
 
 - [Canvas](www.canvas.com) For the "gif loading".
 
+- [PWA](https://create-react-app.dev/docs/making-a-progressive-web-app/) Progressive Web Application 
+
 ## Setup
 
 > git clone https://github.com/Cedricdebroux/portfolio.git
