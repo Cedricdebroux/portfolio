@@ -22,8 +22,10 @@ import { NavLink } from 'react-router-dom';
 
 import { Nav } from 'react-bootstrap'
 
+
 class HomePage extends Component {
     render() {
+        
         return (
             <>
             <div className={styles.welcomBox}>

@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Footer from './components/features/footer/footer';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-
+import '../src/components/utils/i18n';
 ReactDOM.render(
  
 <App />

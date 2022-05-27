@@ -17,7 +17,7 @@ import { Container, Navbar, Nav } from 'react-bootstrap'
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
 import logoCed from './components/images/logoCed.png';
 
-
+import { withTranslation, useTranslation, Trans } from 'react-i18next';
 
 
 const particlesInit = (main) => {
@@ -30,12 +30,17 @@ const particlesLoaded = (container) => {
  
 };
 
-
+const lngs = {
+  fr: { nativeName: 'Français' },
+  en: { nativeName: 'English' }
+};
 const routes = [
   { path: '/home', name: 'Accueil', Component: HomePage },
   { path: '/about', name: 'À propos de moi', Component: AboutMe },
   { path: '/works', name: 'Réalisations', Component: Works },
   { path: '/contact', name: 'Contactez-moi', Component: ContactMe }
+  
+  
 ]
 
 
@@ -46,25 +51,28 @@ class App extends Component {
       content: null,
       loaded: false
     }
-
+    
     setTimeout( () => {
       this.setState({
         loaded: true
       })
     }, 3000);
   }
- render() {
+  render() {
+   const { i18n } = this.props;
+  
   return (
     <Router>
     <ScrollToTop>
   { this.state.loaded ? (
     <>
     <div className="mb-5">
-
+    
     <Navbar fixed="top" variant="dark" expand="md" className='navBarBg'>
     <Container fluid>
     <Navbar.Brand className='logo-accueil' href="/">
       <img src={logoCed} alt="logo" className='logo-ced' />
+     <p>{this.props.t('description.part2')}</p>
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
@@ -82,8 +90,16 @@ class App extends Component {
       exact
       >
             {route.name}
+            
       </Nav.Link>
         ))}
+        <div>
+          {Object.keys(lngs).map((lng) => (
+            <button key={lng} style={{ fontWeight: this.props.i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
+              {lngs[lng].nativeName}
+            </button>
+          ))}
+        </div>
         </Nav>
         </Navbar.Collapse>
         </Container>
@@ -283,4 +299,4 @@ class App extends Component {
 
 
 
-export default App;
+export default withTranslation() (App);

@@ -10,6 +10,8 @@ import forum from '../../images/works/forum/forum480.webp';
 
 
 export default function Works() {
+
+  
   return (
     <>
       <div className="container">
@@ -26,8 +28,10 @@ export default function Works() {
                   Ce projet fait avec React était l'occasion de me
                 </p>
                 <p className={styles.text}>
+
                   remettre au front-end avec un framework javascript.
                 </p>
+        
               </div>
               <div className={styles.images}>
                 <img className={styles.images} src={movieHome} alt="movie home" width="480" heigh="320" />
