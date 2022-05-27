@@ -29,7 +29,7 @@ i18n
                 translation: {
                     description: {
                         part1: 'Edit <1>src/App.js</1> and save to reload.',
-                        part2: 'Learn fuck React'// here we will place our translations...
+                        part2: 'Learn React'// here we will place our translations...
                     }
                 }
             }
