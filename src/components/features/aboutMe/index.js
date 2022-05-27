@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import styles from "./AboutMe.module.css";
 import { Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
@@ -7,8 +7,10 @@ import Cv from '../../images/cv/cedric_debroux_cv.pdf';
 import logoDart from '../../images/competences/logoDart.png';
 import logoFlutter from '../../images/competences/logoFlutter.png';
 import logoJava from '../../images/competences/logoJava.png';
+import { withTranslation } from 'react-i18next';
 
-export default function AboutMe () {
+class AboutMe extends Component {
+  render() {
   const saveFile = () => {
     saveAs(
       Cv,
@@ -19,44 +21,44 @@ export default function AboutMe () {
       <>
         <div className={ styles.aboutMe}>
           <h1 className={ styles.title }>
-            Il était une fois
+            { this.props.t('aboutMe.title') }
           </h1>
           <p className={ styles.text }>
-            Fruit des années 80, passioné par le monde numérique depuis mon enfance.
+            { this.props.t('aboutMe.text1') }
           </p>
           <p className={ styles.text }>
-           Mes premiers pas dans le monde de l'informatique se sont faits sur une machine tournant sous DOS et depuis je suis resté addicte.
+            { this.props.t('aboutMe.text2') }
           </p>
           <p className={ styles.text }>
-            Après une reconversion professionnelle réussie dans le développement web, je prends plaisir à évoluer dans ce nouvel environement en perpétuel changement.
+            { this.props.t('aboutMe.text3') }
           </p>
 
           <h2 className={ styles.title }>
-            Aujourd'hui
+            { this.props.t('aboutMe.title2') }
           </h2>
           <p className={ styles.text }>
-           Je suis avide de découvrir de nouvelles technologies et de m'y perfectionner grâce à mon besoin d'apprendre au quotidien.
+            { this.props.t('aboutMe.text4') }
           </p>
           <p className={ styles.text }>
-            Mes capacités de communication et d'adaptation viennent de ma nature empathique.
+            { this.props.t('aboutMe.text5') }
           </p>
           <p className={ styles.text }>
-            Étant autonome et proactif, j'aime prendre des initiatives pour atteindre mes objectifs. 
+            { this.props.t('aboutMe.text6') } 
           </p>
           <p className={ styles.text }>
-            Le travail en équipe représente toujours une opportunité d'échange et de découverte <em>"Seul, on va plus vite, ensemble, on va plus loin"</em>.
+            {this.props.t('aboutMe.text7')}<em>{this.props.t('aboutMe.text7Em')}</em>.
           </p>
           <p className={ styles.text }>
-            Je serai ravi de vous rencontrer pour vous en dire plus.
+            { this.props.t('aboutMe.text8') }
           </p>
           <Nav.Link as={NavLink} className={ styles.navLink } to="/contact">
           <button className={ styles.formButton}>
-              Contactez-moi
+            { this.props.t('home.buttonContactMe') }
           </button>
           </Nav.Link>
 
           <h2 className={ styles.titleH }>
-            À l'horizon
+            { this.props.t('aboutMe.title3') }
           </h2>
           <div className={ styles.logoHorizon }>
             <img className={ styles.logoH1 } src={logoDart} alt="logo Dart" width="30" heigh="30"/>
@@ -64,23 +66,25 @@ export default function AboutMe () {
             <img className={ styles.logoH3 } src={logoJava} alt="logo Java" width="30" heigh="30"/>
           </div>
           <p className={ styles.text }>
-            Je suis toujours à la recherche d'un nouveau challenge et de nouveaux défis.
+            { this.props.t('aboutMe.text9') }
           </p>
           <p className={ styles.text }>
-            Flutter, Dart , Java, sont les prochains langages que je souhaite approfondir.
+            { this.props.t('aboutMe.text10') }
           </p>
           <p className={ styles.text }>
-            Flutter est un framework de développement web qui permet de créer des applications mobiles en utilisant le langage Dart.
-            C'est suffisant pour éveiller ma curiosité, pour moi, il fait partie des frameworks incontournables à l'air du digital.
+            { this.props.t('aboutMe.text11') }
           </p>
           <p className={ styles.text }>
-            Java est un langage de programmation orienté objet qui a fait ses preuves, étant très utilisé à travers le monde, je ne pouvais pas passer à côté. 
+            { this.props.t('aboutMe.text12') } 
           </p>
           <p className={ styles.text }>
-            Le monde du développement est en perpétuelle évolution, c'est ce qui me plait ! J'ai hâte de découvrir ce que l'avenir nous réserve.
+            { this.props.t('aboutMe.text13') }
           </p>
-          <button onClick={saveFile} className={ styles.formButtonDown}>Télécharger mon CV</button>
+          <button onClick={saveFile} className={ styles.formButtonDown}>{this.props.t('aboutMe.download')}</button>
         </div>
       </>
     );
+  }
 }
+
+export default withTranslation()(AboutMe);
