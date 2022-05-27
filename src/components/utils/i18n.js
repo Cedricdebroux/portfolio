@@ -38,6 +38,9 @@ i18n
                         box2Title:'Vous voulez en savoir plus ?',
                         buttonContactMe:'Contactez-moi'
                     },
+                    footer:{
+                        footerText:'© 2022-Tous droits reservés'
+                    },
                     description: {
                         part1: 'coucou',
                         part2: 'Apprendre React'// here we will place our translations...
@@ -64,6 +67,9 @@ i18n
                         box1Texte3:'For now, I\'m learning',
                         box2Title:'Do you want to know more ?',
                         buttonContactMe:'Contact me'
+                    },
+                    footer:{
+                        footerText:'© 2022-All rights reserved'
                     },
                     description: {
                         part1: 'Edit <1>src/App.js</1> and save to reload.',

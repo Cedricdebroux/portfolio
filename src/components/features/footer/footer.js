@@ -5,6 +5,7 @@ import logoLinkedin from '../../images/logoLinkedin.png';
 import logoMail from '../../images/logoMail.png';
 import logoBadge from '../../images/logoBadge.png';
 import LoadingFooter from '../../utils/LoadingFooter';
+import { withTranslation } from 'react-i18next';
 class Footer extends Component {
     constructor(props){
         super(props);
@@ -26,7 +27,7 @@ class Footer extends Component {
                 <div >
                     <div className={ styles.footerCustom }>
                         <p className={  styles.footerColor }>Cédric Debroux</p>
-                        <p className={  styles.footerColor }>© 2022-Tous droits reservés</p>
+                        <p className={  styles.footerColor }>{this.props.t('footer.footerText')}</p>
                         <div className={ styles.footerLogo }>
                             <a href='https://github.com/Cedricdebroux' target="blank"><img className='mr-3' src={ logoGit } alt="logoGit" width="32" heigh="32"/></a>
                             <a href='https://www.linkedin.com/in/cedric-debroux/' target="blank"><img className='mr-3' src={ logoLinkedin } alt="logoLinkedin" width="32" heigh="32"/></a>
@@ -41,5 +42,4 @@ class Footer extends Component {
         );
     }
 }
-
-export default Footer;
+export default withTranslation()(Footer);   
