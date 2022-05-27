@@ -22,16 +22,18 @@ import { NavLink } from 'react-router-dom';
 
 import { Nav } from 'react-bootstrap'
 
+import { withTranslation } from 'react-i18next';
 
 class HomePage extends Component {
     render() {
+        
         return (
             <>
             <div className={styles.welcomBox}>
                 <div className={ styles.box }>
                     <h1 className={ styles.title }>Cédric Debroux</h1>
-                    <p className={ styles.subtitle }>Votre futur</p>
-                    <p className={ styles.subtitle2 }>Développeur Web Full Stack</p>
+                    <p className={ styles.subtitle }>{this.props.t('home.subTitle')}</p>
+                    <p className={ styles.subtitle2 }>{this.props.t('home.subTitle2')}</p>
                 </div>
                 <div className={styles.boxImg}>
                     <img src={logoReact} alt='logo react' className={styles.logoReact} width="90" heigh="90" />
@@ -45,24 +47,24 @@ class HomePage extends Component {
 
                 <div className={ styles.boxAboutMe }>
                     <div className={ styles.boxAboutMe2 }>
-                        <p className={ styles.titleAboutMe }>« Choisis un travail que tu aimes, et tu n’auras pas à travailler un seul jour dans ta vie ».</p>
+                        <p className={ styles.titleAboutMe }>{this.props.t('home.titleAboutMe')}</p>
                         <a href="https://fr.wikipedia.org/wiki/Confucius" target="blank" className={ styles.textCitationLink }><p className={ styles.textCitation }>- CONFUCIUS -</p></a>
                     </div>
                     <Nav.Link as={NavLink} className={ styles.navLinkMe } to="/about">
                     <button className={ styles.buttonAboutMe }>
-                        À propos de moi
+                        {this.props.t('home.buttonAboutMe')}
                     </button>
                     </Nav.Link>
                 </div>
 
                 <div className={ styles.box1 }>
                     <div className={ styles.box1Text }>
-                        <h2 className={ styles.box1Title1 }>Compétences</h2>
-                        <p className={ styles.box1Texte1 }>Animé d'une curiosité intellectuelle, j'aime me tenir informé des dernières nouveautés.</p>
-                        <p className={ styles.box1Texte2 }>Voici un aperçu des technologies que j'utilise actuellement.</p>
+                        <h2 className={ styles.box1Title1 }>{this.props.t('home.box1Title1')}</h2>
+                        <p className={ styles.box1Texte1 }>{this.props.t('home.box1Texte1')}</p>
+                        <p className={ styles.box1Texte2 }>{this.props.t('home.box1Texte2')}</p>
                         <Nav.Link as={NavLink} className={ styles.navLinkMe } to="/works">
                         <button className={ styles.buttonAboutMe}>
-                        Réalisations
+                        {this.props.t('home.buttonAchievements')}
                         </button>
                         </Nav.Link>
                     </div>
@@ -104,7 +106,7 @@ class HomePage extends Component {
                     </div>
                 </div>
                 <div className={ styles.box1Learn }>
-                    <p className={ styles.box1Texte3 }>Pour l'instant, j'apprends</p>
+                    <p className={ styles.box1Texte3 }>{this.props.t('home.box1Texte3')}</p>
                     <div className={ styles.box1Logo2 }>
                         <ul className={ styles.box1LearnUl}>
                             <li>
@@ -125,11 +127,11 @@ class HomePage extends Component {
 
                 <div className={ styles.box2 }>
                     <div className={ styles.boxTitle }>
-                    <p className={ styles.box2Title }>Vous voulez en savoir plus ?</p>
+                    <p className={ styles.box2Title }>{this.props.t('home.box2Title')}</p>
                     </div>
                     <Nav.Link as={NavLink} className={ styles.navLink } to="/contact">
                     <button className={ styles.formButton}>
-                        Contactez-moi
+                        {this.props.t('home.buttonContactMe')}
                     </button>
                     </Nav.Link>
                 </div>
@@ -138,4 +140,4 @@ class HomePage extends Component {
         )
     }
 }
-export default HomePage;
+export default withTranslation()(HomePage)
