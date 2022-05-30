@@ -58,6 +58,88 @@ i18n
                         text13: 'Le monde du développement est en perpétuelle évolution, c\'est ce qui me plait ! J\'ai hâte de découvrir ce que l\'avenir nous réserve.',
                         dowload: 'Télécharger mon CV'
                     },
+                    works: {
+                        title: 'Réalisations',
+                        subtitle: 'Film',
+                        text1: 'Ce projet fait avec React était l\'occasion de me',
+                        text2: 'remettre au front-end avec un framework javascript.',
+                        subTitle2: 'E-commerce',
+                        text3: 'E-commerce réalisé avec Symfony 5, PHP, Vue.',
+                        text4: 'Ce projet à été réalisé en entreprise, les images ont été',
+                        text5: 'floutées pour des raisons de confidentialité.',
+                        subTitle3: 'Jeux',
+                        text6: 'Jeu qui permet l\'achat (fictif) d\'arbres de la ville de Liège.',
+                        text7: 'Ce dernier a été réalisé avec React, NodeJS, MongoDB,',
+                        text8: 'Leaflet, OpenstreetMap.',
+                        subTitle4: 'Wordpress',
+                        text9: 'Projet réalisé avec Wordpress, PHP.',
+                        text10: 'Chez BeCode dans le cadre de mon apprentissage.',
+                        subTitle5: 'Forum',
+                        text11: 'Forum réalisé avec PHP, SQL, Bootstrap.',
+                        text12: 'Chez BeCode dans le cadre de mon apprentissage.'
+                    },
+                    movie: {
+                        title: 'Projet Film',
+                        subTitle: 'React',
+                        text1: 'Après plusieurs mois passés sur Symfony, c\'était l\'occasion pour moi de me remettre à un frameworks javascript front-end.',
+                        text2: 'J\'ai pris beaucoup de plaisir à réaliser celui-ci.',
+                        text3: 'Il a été réalisé en React avec notament Formik, React-Router, Axios et Bootstrap.',
+                        texte4: 'Il a une barre de recherche fonctionelle avec la selection de la langue du film à afficher dans le résultat, et un ajout au favoris de vos films préférés.',
+                        text5: 'Pour l\'instant, il n\'est pas encore relié à une base de données, mais ce projet est encore amené à évoluer.',
+                        textLink: 'Projet film'
+                    },
+                    webshop: {
+                        title: 'E-commerce',
+                        subTitle: 'Symfony 5, PHP, Vue, Sylius.',
+                        text1: 'Celui-ci est le dernier gros projet d\'entreprise que nous avons réalisé en équipe.',
+                        text2: 'Il s\'agit d\'un site E-commerce complet.',
+                        text3: 'J\'y étais chargé de la partie Back-end avec le framework Symfony 5 ainsi que de la gestion des noms de domaine et de la mise en production.',
+                        text4: 'Plusieurs Technologie ont été nécéssaire à l\'élaborations de celui-ci, notament Symfony 5, PHP 8, Webpack-encore, VueJs, Doctrine, Easy admin, Twig, Stripe, MailJet.',
+                        text5: 'Il a été réalisé en trois langues, Français, Néerlandais, Anglais.'
+                    },
+                    game: {
+                        title: 'Jeu en React',
+                        subtitle: 'Acheter les arbres de la ville de Liège.',
+                        text1: 'Dans une carte de Liège, il y a des arbres. Chaque arbre a une valeur (qui est le produit de son diamètre par sa hauteur, arrondi vers le haut).',
+                        text2: 'Lorsqu\'un joueur entre dans le jeu, il doit créer un compte, recevra une couleur aléatoire (qui peut être modifiée dans le profil) et recevra trois arbres aléatoires gratuits (Et quelques feuilles bonus, selon la formule : [feuilles totales des joueurs] / [nombre de joueurs]).',
+                        text3: 'Toutes les quinze minutes dans la vraie vie, chaque joueur recevra une quantité de feuilles égale au total de chacun de ses arbres.',
+                        text4: 'Chaque heure dans la vraie vie, chaque joueur perd la moitié de ses feuilles.',
+                        text5: 'Chaque fois qu\'il le souhaite, un joueur peut acheter un arbre.',
+                        textLink: 'Une partie ?',
+                        textLink2: 'Pour les détails rendez-vous sur '
+                    },
+                    wordpress: {
+                        title: 'Wordpress',
+                        subTitle: 'Projet client Wordpress sur le thème d\'un restaurant.',
+                        text1: 'Ce projet a été réalisé en équipe dans le cadre de ma formation chez Becode.',
+                        text2: 'L\'enjeu était de réaliser un projet client avec comme thème le restaurant.',
+                        text3: 'Les images et la mise en page étaient imposées.',
+                        text4: 'Pour la réalisation de celui-ci, nous avons utilisé wordpress et Acf.',
+                        text5: 'Comme nous l\'aurions fait pour un vrai client, uniquement certaine option de la partie "admin" était accessible pour le client et il avait la possibilité d\'éditer son site en fonction des changements dans les menus par exemple.',
+                        textLink: 'Le restaurant'
+                    },
+                    forum: {
+                        title: 'Forum',
+                        subTitle: 'Un forum complet en PHP',
+                        text1: 'Ce projet a été réalisé en équipe dans le cadre de ma formation chez Becode.',
+                        text2: 'L\'enjeu était de réaliser un forum complet en PHP.',
+                        text3: 'Pour ce dernier, nous avons une page de login et signup à l\'arriver sur le site.',
+                        text4: 'Ensuite, plusieurs informations devaient apparaître sur la page d\'accueil, notamment les derniers utilisateurs connecter, les derniers posts classés par catégories.',
+                        text5: 'Pour en savoir plus je vous invite à visiter le '
+                    },
+                    contact: {
+                        title: 'Contactez-moi',
+                        subTitle: 'Travaillons ensemble',
+                        placeHolder1: 'Nom *',
+                        placeHolder2: 'Société',
+                        placeHolder3: 'Téléphone',
+                        placeHolder4: 'Email *',
+                        placeHolder5: 'Votre message *',
+                        invalid: 'Merci de remplir tous les champs.',
+                        invalid2: 'Une erreur s\'est produite, veuillez réessayer.',
+                        valid: 'Votre message a bien été envoyé, je vous répondrai dans les plus brefs délais.',
+                        buttonSend: 'Envoyer'
+                    },
                     footer: {
                         footerText: '© 2022-Tous droits reservés'
                     },
@@ -103,6 +185,89 @@ i18n
                         text12: 'Java is a proven object-oriented programming language, being widely used around the world, I couldn\'t miss it.',
                         text13: 'The world of development is constantly changing, that\'s what I like! I look forward to discovering what the future holds for us.',
                         download: 'Download my CV'
+                    },
+                    works: {
+                        title: 'My achievements',
+                        subtitle: 'Movie',
+                        text1: 'This project done with React was an opportunity to',
+                        text2: 'return to the front-end with a javascript framework.',
+                        subTitle2: 'E-commerce',
+                        text3: 'E-commerce carried out with Symfony 5, PHP, Vue.',
+                        text4: 'This project was carried out in a company, the images',
+                        text5: 'were blurred for reasons of confidentiality.',
+                        subTitle3: 'Games',
+                        text6: 'Game that allows the (fictitious) purchase of trees ',
+                        text7: 'from the city of Liège.',
+                        text8: 'The latter was made with React, NodeJS, MongoDB,',
+                        text9: 'Leaflet, OpenstreetMap.',
+                        subTitle4: 'Wordpress',
+                        text10: 'Project carried out with Wordpress, PHP.',
+                        text11: 'At BeCode as part of my apprenticeship.',
+                        subTitle5: 'Forum',
+                        text12: 'Forum made with PHP, SQL, Bootstrap.',
+                        text13: 'At BeCode as part of my apprenticeship.'
+                    },
+                    movie: {
+                        title: 'Movie project',
+                        subTitle: 'React',
+                        text1: 'After several months spent on Symfony, it was an opportunity for me to get back to a front-end javascript frameworks.',
+                        text2: 'I had a lot of fun making this one.',
+                        text3: 'It was made in React with in particular Formik, React-Router, Axios and Bootstrap.',
+                        texte4: 'It has a functional search bar with the selection of the language of the movie to display in the result, and an addition to the favorites of your favorite movies.',
+                        text5: 'At the moment, it is not yet linked to a database, but this project is still evolving.',
+                        textLink: 'Movie project'
+                    },
+                    webshop: {
+                        title: 'E-commerce',
+                        subTitle: 'Symfony 5, PHP, Vue, Sylius.',
+                        text1: 'This is the last big business project we carried out as a team.',
+                        text2: 'This is a complete E-commerce site.',
+                        text3: 'I was in charge of the Back-end part with the Symfony 5 framework as well as domain name management and production.',
+                        text4: 'Several Technologies were necessary to develop it, including Symfony 5, PHP 8, Webpack-encore, VueJs, Doctrine, Easy admin, Twig, Stripe, MailJet.',
+                        text5: 'It was produced in three languages, French, Dutch, English.'
+                    },
+                    game: {
+                        title: 'Game in React',
+                        subtitle: 'Buy the trees of the city of Liège.',
+                        text1: 'In a map of Liège, there are trees. Each tree has a value (which is the product of its diameter by its height, rounded upwards).',
+                        text2: 'When a player enters the game, he must create an account, receive a random color (which can be modified in the profile) and receive three free random trees (And a few bonus sheets, depending on the formula: [total player sheets] / [number of players]).',
+                        text3: 'Every fifteen minutes in real life, each player will receive a total amount of leaves equal to each of his trees.',
+                        text4: 'Every hour in real life, each player loses half of his leaves.',
+                        text5: 'Whenever he wishes, a player can buy a tree.',
+                        textLink: 'A part?',
+                        textLink2: 'For details go to '
+                    },
+                    wordpress: {
+                        title: 'Wordpress',
+                        subTitle: 'Wordpress customer project on the theme of a restaurant.',
+                        text1: 'This project was carried out as a team as part of my training at Becode.',
+                        text2: 'The challenge was to carry out a customer project with the restaurant as its theme.',
+                        text3: 'Images and layout were imposed..',
+                        text4: 'For the realization of this one, we used wordpress and Acf.',
+                        text5: 'As we would have done for a real customer, only a certain option in the "admin" part was accessible to the customer and he had the possibility to edit his site according to changes in the menus for example.',
+                        textLink: 'The restaurant'
+                    },
+                    forum: {
+                        title: 'Forum',
+                        subTitle: 'A complete forum in PHP',
+                        text1: 'This project was carried out as a team as part of my training at Becode.',
+                        text2: 'The challenge was to create a complete forum in PHP.',
+                        text3: 'For the latter, we have a login and signup page to arrive on the site.',
+                        text4: 'Then, several information had to appear on the home page, including the last users to connect, the latest posts sorted by categories.',
+                        text5: 'To learn more, I invite you to visit '
+                    },
+                    contact: {
+                        title: 'Contact me ',
+                        subTitle: 'Let\'s work together ',
+                        placeHolder1: 'Name *',
+                        placeHolder2: 'Company',
+                        placeHolder3: 'Phone number',
+                        placeHolder4: 'Email *',
+                        placeHolder5: 'Your message *',
+                        invalid: 'Please fill in all the blanks.',
+                        invalid2: 'An error has occurred. Please try again.',
+                        valid: 'Your message has been sent, I will answer you as soon as possible.',
+                        buttonSend: 'Send'
                     },
                     footer: {
                         footerText: '© 2022-All rights reserved'

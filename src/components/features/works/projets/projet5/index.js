@@ -9,35 +9,36 @@ import login from '../../../../images/works/forum/login.webp';
 import page1 from '../../../../images/works/forum/page1.webp';
 import page2 from '../../../../images/works/forum/page2.webp';
 import page3 from '../../../../images/works/forum/page3.webp';
+import { withTranslation } from 'react-i18next';
 
 
-function Projet5() {
+function Projet5(props) {
   return (
    <div className="container">
      <Nav.Link as={NavLink} to="/works">
        <img src={back} alt="back" className={styles.back} width="47" heigh="30"/>
      </Nav.Link>
      <div className={ styles.containerProjet1 }>
-        <h1 className={ styles.title }>Forum</h1>
+        <h1 className={ styles.title }>{props.t('forum.title')}</h1>
         <h2 className={ styles.subTitle }>
-          Un forum complet en PHP
+          {props.t('forum.subTitle')}
         </h2>
         <div className={ styles.content }>
           <div className={ styles.boxText }>
             <p className={ styles.text}>
-            Ce projet a été réalisé en équipe dans le cadre de ma formation chez Becode.
+              {props.t('forum.text1')}
             </p>
             <p className={ styles.text}>
-            L'enjeu était de réaliser un forum complet en PHP.
+              {props.t('forum.text2')}
             </p>
             <p className={ styles.text}>
-            Pour ce dernier, nous avons une page de login et signup à l'arriver sur le site.
+              {props.t('forum.text3')}
             </p>
             <p className={ styles.text}>
-            Ensuite, plusieurs informations devaient apparaître sur la page d'accueil, notamment les derniers utilisateurs connecter, les derniers posts classés par catégories.
+              {props.t('forum.text4')}
             </p>
             <p className={ styles.text}>
-            Pour en savoir plus je vous invite à visiter le <a href="https://github.com/Sanamanel/Forum" target="blank">GitHub</a>.
+            {props.t('forum.text5')}<a href="https://github.com/Sanamanel/Forum" target="blank">GitHub</a>.
             </p>
           </div>
           <div className={ styles.images }>
@@ -72,4 +73,4 @@ function Projet5() {
 }
 
 
-export default Projet5;
+export default withTranslation()(Projet5);

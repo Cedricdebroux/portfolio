@@ -15,35 +15,37 @@ import page7 from '../../../../images/works/webshop/page7.webp';
 import page8 from '../../../../images/works/webshop/page8.webp';
 import page9 from '../../../../images/works/webshop/page9.webp';
 import home from '../../../../images/works/webshop/home.webp';
+import { withTranslation } from 'react-i18next';
 
-
-function Projet2() {
+function Projet2(props) {
   return (
     <div className="container">
       <Nav.Link as={NavLink} to="/works">
         <img src={back} alt="back" className={styles.back} width="47" heigh="30" />
       </Nav.Link>
       <div className={styles.containerProjet1}>
-        <h1 className={styles.title}>E-commerce</h1>
+        <h1 className={styles.title}>
+          {props.t('webshop.title')}
+        </h1>
         <h2 className={styles.subTitle}>
-          Symfony 5, PHP, Vue, Sylius.
+          {props.t('webshop.subTitle')}
         </h2>
         <div className={styles.content}>
           <div className={styles.boxText}>
             <p className={styles.text}>
-              Celui-ci est le dernier gros projet d'entreprise que nous avons réalisé en équipe.
+              {props.t('webshop.text1')}
             </p>
             <p className={styles.text}>
-              Il s'agit d'un site E-commerce complet.
+              {props.t('webshop.text2')}
             </p>
             <p className={styles.text}>
-              J'y étais chargé de la partie Back-end avec le framework Symfony 5 ainsi que de la gestion des noms de domaine et de la mise en production.
+              {props.t('webshop.text3')}
             </p>
             <p className={styles.text}>
-              Plusieurs Technologie ont été nécéssaire à l'élaborations de celui-ci, notament Symfony 5, PHP 8, Webpack-encore, VueJs, Doctrine, Easy admin, Twig, Stripe, MailJet.
+              {props.t('webshop.text4')}
             </p>
             <p className={styles.text}>
-            Il a été réalisé en trois langues, Français, Néerlandais, Anglais.
+              {props.t('webshop.text5')}
             </p>
           </div>
           <div className={styles.images}>
@@ -53,8 +55,8 @@ function Projet2() {
                 rewind: true,
                 gap: '1rem',
                 type: 'loop',
-                speed : 3000,
-                interval : 1000,
+                speed: 3000,
+                interval: 1000,
               }}
             >
               <SplideSlide>
@@ -64,28 +66,28 @@ function Projet2() {
                 <img className={styles.images} src={page1} alt="page1" width="480" heigh="320" />
               </SplideSlide>
               <SplideSlide>
-                <img className={styles.images} src={page2} alt="page2" width="480" heigh="320"/>
+                <img className={styles.images} src={page2} alt="page2" width="480" heigh="320" />
               </SplideSlide>
               <SplideSlide>
-                <img className={styles.images} src={page3} alt="page3" width="480" heigh="320"/>
+                <img className={styles.images} src={page3} alt="page3" width="480" heigh="320" />
               </SplideSlide>
               <SplideSlide>
                 <img className={styles.images} src={page4} alt="page4" width="480" heigh="320" />
               </SplideSlide>
               <SplideSlide>
-                <img className={styles.images} src={page5} alt="page5" width="480" heigh="320"/>
+                <img className={styles.images} src={page5} alt="page5" width="480" heigh="320" />
               </SplideSlide>
               <SplideSlide>
                 <img className={styles.images} src={page6} alt="page6" width="480" heigh="320" />
               </SplideSlide>
               <SplideSlide>
-                <img className={styles.images} src={page7} alt="page7" width="480" heigh="320"/>
+                <img className={styles.images} src={page7} alt="page7" width="480" heigh="320" />
               </SplideSlide>
               <SplideSlide>
-                <img className={styles.images} src={page8} alt="page8" width="480" heigh="320"/>
+                <img className={styles.images} src={page8} alt="page8" width="480" heigh="320" />
               </SplideSlide>
               <SplideSlide>
-                <img className={styles.images} src={page9} alt="page9" width="480" heigh="320"/>
+                <img className={styles.images} src={page9} alt="page9" width="480" heigh="320" />
               </SplideSlide>
             </Splide>
           </div>
@@ -96,4 +98,4 @@ function Projet2() {
 }
 
 
-export default Projet2;
+export default withTranslation()(Projet2);

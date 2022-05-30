@@ -11,41 +11,41 @@ import nameThree from '../../../../images/works/btc/nameThree.webp';
 import page1 from '../../../../images/works/btc/page1.webp';
 import scoreboard from '../../../../images/works/btc/scoreboard.webp';
 import signup from '../../../../images/works/btc/signup.webp';
+import { withTranslation } from 'react-i18next';
 
-
-function Projet3() {
+function Projet3(props) {
   return (
    <div className="container">
      <Nav.Link as={NavLink} to="/works">
        <img src={back} alt="back" className={styles.back} width="47" heigh="30"/>
      </Nav.Link>
      <div className={ styles.containerProjet1 }>
-        <h1 className={ styles.title }>Jeu en React</h1>
+        <h1 className={ styles.title }>{props.t('game.title')}</h1>
         <h2 className={ styles.subTitle }>
-          Acheter les arbres de la ville de Liège.
+          {props.t('game.subtitle')}
         </h2>
         <div className={ styles.content }>
           <div className={ styles.boxText }>
             <p className={ styles.text}>
-            Dans une carte de Liège, il y a des arbres. Chaque arbre a une valeur (qui est le produit de son diamètre par sa hauteur, arrondi vers le haut).
+              {props.t('game.text1')}
             </p>
             <p className={ styles.text}>
-            Lorsqu'un joueur entre dans le jeu, il doit créer un compte, recevra une couleur aléatoire (qui peut être modifiée dans le profil) et recevra trois arbres aléatoires gratuits (Et quelques feuilles bonus, selon la formule : [feuilles totales des joueurs] / [nombre de joueurs]).
+              {props.t('game.text2')}
             </p>
             <p className={ styles.text}>
-            Toutes les quinze minutes dans la vraie vie, chaque joueur recevra une quantité de feuilles égale au total de chacun de ses arbres.
+              {props.t('game.text3')}
             </p>
             <p className={ styles.text}>
-            Chaque heure dans la vraie vie, chaque joueur perd la moitié de ses feuilles.
+              {props.t('game.text4')}
             </p>
             <p className={ styles.text}>
-            Chaque fois qu'il le souhaite, un joueur peut acheter un arbre.
+              {props.t('game.text5')}
             </p>
             <p className={ styles.text}>
-              <a href="https://btc-liege.herokuapp.com/" target="blank">Une partie ?</a>
+              <a href="https://btc-liege.herokuapp.com/" target="blank">{props.t('movie.textLink')}</a>
             </p>
             <p className={ styles.text}>
-            Pour les détails rendez-vous sur <a href="https://github.com/the-botanists/mwenbwa"  target="blank">GitHub.</a> 
+            {props.t('game.textLink2')}<a href="https://github.com/the-botanists/mwenbwa"  target="blank">GitHub.</a> 
             </p>
           </div>
           <div className={ styles.images }>
@@ -86,4 +86,4 @@ function Projet3() {
 }
 
 
-export default Projet3;
+export default withTranslation()(Projet3);
