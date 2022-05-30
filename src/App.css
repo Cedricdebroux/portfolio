@@ -61,6 +61,10 @@
 .navBarBg {
   background-color: #0d0a28;
 }
+.language {
+  margin-top: 5px;
+  border-radius: 10px;
+}
 
 /* ----------------------------- End Navbar ----------------------------- */
 

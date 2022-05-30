@@ -88,7 +88,7 @@ class App extends Component {
 
                         <div>
                           {Object.keys(lngs).map((lng) => (
-                            <button key={lng} style={{ fontWeight: this.props.i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
+                            <button className='language' key={lng} style={{ fontWeight: this.props.i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
                               {lngs[lng].nativeName}
                             </button>
                           ))}
