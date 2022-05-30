@@ -133,7 +133,9 @@
 .buttonAboutMe .navLinkMe:hover {
   color: #dfdede;
 }
-
+.navLink{
+  padding: 0.5rem 0.5rem 0.5rem 0rem !important;
+}
 .navLinkMe {
   color: #0d0a28;
   font-size: 1.4rem;
