@@ -13,9 +13,11 @@ import Projet4 from './components/features/works/projets/projet4/';
 import Projet5 from './components/features/works/projets/projet5/';
 import { BrowserRouter as Router, Route, NavLink, Redirect } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
-import { Container, Navbar, Nav } from 'react-bootstrap'
+import { Container, Nav, Navbar } from 'react-bootstrap'
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
 import logoCed from './components/images/logoCed.png';
+
+
 
 import { withTranslation } from 'react-i18next';
 
@@ -68,17 +70,17 @@ class App extends Component {
             <>
               <div className="mb-5">
 
-                <Navbar fixed="top" variant="dark" expand="md" className='navBarBg'>
+                <Navbar collapseOnSelect fixed="top" variant="dark" expand="md" className='navBarBg'>
                   <Container fluid>
                     <Navbar.Brand className='logo-accueil' href="/">
                       <img src={logoCed} alt="logo" className='logo-ced' />
                       {/* <p>{this.props.t('description.part2')}</p> appelle du texte selon langue choisie i18n */}
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="navbarScroll">
                       <Nav
-                        className="ml-auto my-2 my-lg-0"
-                        style={{ maxHeight: '180px' }}
+                        className="me-auto"
+                        style={{ maxHeight: '200px' }}
                         navbarScroll
                       >
                         <NavLink to='/home' className="nav-link" activeClassName="active">{this.props.t('navBar.home')}</NavLink>
@@ -86,9 +88,9 @@ class App extends Component {
                         <NavLink to='/works' className="nav-link" activeClassName="active">{this.props.t('navBar.works')}</NavLink>
                         <NavLink to='/contact' className="nav-link" activeClassName="active">{this.props.t('navBar.contact')}</NavLink>
 
-                        <div>
+                        <div className='boxLanguage'>
                           {Object.keys(lngs).map((lng) => (
-                            <button className='language' key={lng} style={{ fontWeight: this.props.i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
+                            <button className="language" key={lng} style={{ color: this.props.i18n.resolvedLanguage === lng ? '#fff' : 'rgba(255,255,255,.5)', textDecorationLine: this.props.i18n.resolvedLanguage === lng ? 'underline' : 'none' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
                               {lngs[lng].nativeName}
                             </button>
                           ))}

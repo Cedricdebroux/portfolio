@@ -63,7 +63,12 @@
 }
 .language {
   margin-top: 5px;
-  border-radius: 10px;
+  background-color: #0d0a28;
+  border: none;
+}
+.boxLanguage {
+  border: 1px solid white;
+  margin-left: 25px;
 }
 
 /* ----------------------------- End Navbar ----------------------------- */
@@ -78,3 +83,23 @@
 }
 
 /* ----------------------- End logo principal ----------------------- */
+
+
+/* media for ipad */
+
+
+
+/* Media for Phone */
+@media screen and (max-width: 430px) {
+  .boxLanguage {
+    margin-left: -5px;
+    border: none;
+  }
+  .language {
+    background-color: #0d0a28;
+  }
+  .page {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+}
